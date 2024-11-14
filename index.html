@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>스타리딩 테스트</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        .question { margin-bottom: 20px; }
+        .options { list-style-type: none; padding: 0; }
+        .options li { margin: 5px 0; }
+        .hidden { display: none; }
+    </style>
+</head>
+<body>
+    <h1>스타리딩 테스트</h1>
+    <div id="test-container">
+        <div id="level-info"></div>
+        <div id="question-container"></div>
+        <button id="next-button" onclick="nextQuestion()">다음 문제</button>
+    </div>
+    <div id="feedback" class="hidden">
+        <h2>테스트 종료</h2>
+        <p id="final-level"></p>
+        <p id="level-scores"></p>
+    </div>
+
+    <script>
+        const problemsByLevel = {
+            0: [
+                {question: "The cat is on the mat.", options: ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"], answer: "B"},
+                {question: "I like to eat apples.", options: ["A. 사과", "B. 오렌지", "C. 바나나"], answer: "A"},
+                {question: "The sun is hot.", options: ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"], answer: "B"}
+            ],
+            1: [
+                {question: "The dog runs fast.", options: ["A. 천천히", "B. 빨리", "C. 조용히"], answer: "B"},
+                {question: "I have a red ball.", options: ["A. 파란색", "B. 녹색", "C. 빨간색"], answer: "C"},
+                {question: "She has a yellow hat.", options: ["A. 노란색", "B. 검은색", "C. 하얀색"], answer: "A"}
+            ],
+            // ... 레벨 2부터 8까지 동일한 구조로 추가 ...
+            9: [
+                {question: "Advanced Question 1", options: ["A. Option1", "B. Option2", "C. Option3"], answer: "A"},
+                {question: "Advanced Question 2", options: ["A. Option1", "B. Option2", "C. Option3"], answer: "B"},
+                {question: "Advanced Question 3", options: ["A. Option1", "B. Option2", "C. Option3"], answer: "C"}
+            ]
+        };
+
+        let currentLevel = 0;
+        let currentQuestionIndex = 0;
+        let correctAnswers = 0;
+        const results = {};
+
+        function loadQuestion() {
+            const levelInfo = document.getElementById("level-info");
+            levelInfo.innerHTML = `=== 레벨 ${currentLevel} 테스트 ===`;
+
+            const questionContainer = document.getElementById("question-container");
+            questionContainer.innerHTML = "";
+
+            if (currentQuestionIndex < problemsByLevel[currentLevel].length) {
+                const problem = problemsByLevel[currentLevel][currentQuestionIndex];
+                const questionDiv = document.createElement("div");
+                questionDiv.className = "question";
+                questionDiv.innerHTML = `<p>${currentQuestionIndex + 1}. ${problem.question}</p>`;
+                
+                const optionsList = document.createElement("ul");
+                optionsList.className = "options";
+                problem.options.forEach(option => {
+                    const li = document.createElement("li");
+                    const label = document.createElement("label");
+                    const radio = document.createElement("input");
+                    radio.type = "radio";
+                    radio.name = "option";
+                    radio.value = option[0];
+                    label.appendChild(radio);
+                    label.appendChild(document.createTextNode(option));
+                    li.appendChild(label);
+                    optionsList.appendChild(li);
+                });
+                questionDiv.appendChild(optionsList);
+                questionContainer.appendChild(questionDiv);
+            } else {
+                // 레벨 평가
+                results[currentLevel] = correctAnswers;
+                if (correctAnswers >= 2 && currentLevel < 9) {
+                    alert(`레벨 ${currentLevel}을 통과하여 레벨 ${currentLevel + 1}으로 이동합니다.`);
+                    currentLevel += 1;
+                    currentQuestionIndex = 0;
+                    correctAnswers = 0;
+                    loadQuestion();
+                } else {
+                    endTest();
+                }
+            }
+        }
+
+        function nextQuestion() {
+            const selectedOption = document.querySelector('input[name="option"]:checked');
+            if (!selectedOption) {
+                alert("옵션을 선택해주세요.");
+                return;
+            }
+            const userAnswer = selectedOption.value;
+            const problem = problemsByLevel[currentLevel][currentQuestionIndex];
+            if (userAnswer === problem.answer) {
+                alert("정답입니다!");
+                correctAnswers += 1;
+            } else {
+                alert(`오답입니다. 정답은 ${problem.answer}입니다.`);
+            }
+            currentQuestionIndex += 1;
+            loadQuestion();
+        }
+
+        function endTest() {
+            document.getElementById("test-container").classList.add("hidden");
+            const feedback = document.getElementById("feedback");
+            feedback.classList.remove("hidden");
+            document.getElementById("final-level").innerText = `최종 레벨: ${currentLevel}`;
+            let scoresText = "각 레벨별 정답 개수:\n";
+            for (const [level, score] of Object.entries(results)) {
+                scoresText += `레벨 ${level}: ${score}/3\n`;
+            }
+            document.getElementById("level-scores").innerText = scoresText;
+        }
+
+        // 초기 로드
+        window.onload = loadQuestion;
+    </script>
+</body>
+</html>
