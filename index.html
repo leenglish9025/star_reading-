@@ -154,35 +154,39 @@
 
         // 문제 로드
         function loadQuestion() {
-            const questionContainer = document.getElementById("question-container");
-            questionContainer.innerHTML = "";
+    const questionContainer = document.getElementById("question-container");
+    questionContainer.innerHTML = "";
 
-            if (currentQuestionIndex < maxQuestions) {
-                const problem = allQuestions[currentQuestionIndex];
-                const questionDiv = document.createElement("div");
-                questionDiv.className = "question";
-                questionDiv.innerHTML = `<p>${problem.question}</p>`;
+    if (currentQuestionIndex < maxQuestions) {
+        const problem = allQuestions[currentQuestionIndex];
+        const questionDiv = document.createElement("div");
+        questionDiv.className = "question";
+        questionDiv.innerHTML = `
+            <p>${problem.question}</p>
+            <p style="color: gray; font-size: 0.9em; margin-top: 5px;">${problem.instruction}</p>
+        `;
 
-                const optionsList = document.createElement("ul");
-                optionsList.className = "options";
-                problem.options.forEach(option => {
-                    const li = document.createElement("li");
-                    const label = document.createElement("label");
-                    const radio = document.createElement("input");
-                    radio.type = "radio";
-                    radio.name = "option";
-                    radio.value = option[0];
-                    label.appendChild(radio);
-                    label.appendChild(document.createTextNode(option));
-                    li.appendChild(label);
-                    optionsList.appendChild(li);
-                });
-                questionDiv.appendChild(optionsList);
-                questionContainer.appendChild(questionDiv);
-            } else {
-                endTest();
-            }
-        }
+        const optionsList = document.createElement("ul");
+        optionsList.className = "options";
+        problem.options.forEach(option => {
+            const li = document.createElement("li");
+            const label = document.createElement("label");
+            const radio = document.createElement("input");
+            radio.type = "radio";
+            radio.name = "option";
+            radio.value = option[0];
+            label.appendChild(radio);
+            label.appendChild(document.createTextNode(option));
+            li.appendChild(label);
+            optionsList.appendChild(li);
+        });
+        questionDiv.appendChild(optionsList);
+        questionContainer.appendChild(questionDiv);
+    } else {
+        endTest();
+    }
+}
+
 
         // 다음 문제
         function nextQuestion() {
