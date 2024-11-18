@@ -1,36 +1,28 @@
 {
   "0": [
     {
-      "question": "The cat is on the mat. 고양이는 어디에 있나요?",
+      "question": "The bird can fly.",
+      "instruction": "다음 보기 중 새가 할 수 있는 것을 고르세요.",
+      "options": ["A. 헤엄칠 수 있다", "B. 걸을 수 있다", "C. 날 수 있다"],
+      "answer": "C"
+    },
+    {
+      "question": "The cat is on the mat.",
+      "instruction": "고양이가 어디에 있는지 고르세요.",
       "options": ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"],
       "answer": "B"
     },
     {
-      "question": "I like to eat apples. 나는 무엇을 먹는것을 좋아하나요?",
+      "question": "I like to eat apples.",
+      "instruction": "화자가 좋아하는 음식을 고르세요.",
       "options": ["A. 사과", "B. 오렌지", "C. 바나나"],
       "answer": "A"
     },
     {
-      "question": "The sun is hot. 태양은 어떤가요?",
+      "question": "The sun is hot.",
+      "instruction": "태양이 어떤지 고르세요.",
       "options": ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"],
       "answer": "B"
-    }
-  ],
-  "1": [
-    {
-      "question": "The dog runs fast. 그 개는 어떻게 달리나요?",
-      "options": ["A. 천천히", "B. 빨리", "C. 조용히"],
-      "answer": "B"
-    },
-    {
-      "question": "I have a red ball. 나는 무슨색의 공을 가지고 있나요?",
-      "options": ["A. 파란색", "B. 녹색", "C. 빨간색"],
-      "answer": "C"
-    },
-    {
-      "question": "She has a yellow hat. 그녀는 무슨 색의 모자를 갖고 있나요?",
-      "options": ["A. 노란색", "B. 검은색", "C. 하얀색"],
-      "answer": "A"
     }
   ]
 }
