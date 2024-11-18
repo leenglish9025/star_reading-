@@ -2,112 +2,147 @@
 <html lang="ko">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스타리딩 테스트</title>
     <style>
-        body { font-family: Arial, sans-serif; margin: 20px; }
-        .question { margin-bottom: 20px; }
-        .options { list-style-type: none; padding: 0; }
-        .options li { margin: 5px 0; }
-        .hidden { display: none; }
+        /* 기본 스타일 */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f9fa;
+            color: #333;
+        }
+
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 15px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        main {
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        .question {
+            margin-bottom: 20px;
+        }
+
+        .options {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .options li {
+            margin: 10px 0;
+        }
+
+        .options input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 12px;
+            color: #777;
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 20px;
+            }
+
+            main {
+                margin: 10px;
+                padding: 15px;
+            }
+
+            button {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>스타리딩 테스트</h1>
-    <div id="test-container">
-        <div id="level-info"></div>
-        <div id="question-container"></div>
-        <button id="next-button" onclick="nextQuestion()">다음 문제</button>
-    </div>
-    <div id="feedback" class="hidden">
-        <h2>테스트 종료</h2>
-        <p id="final-level"></p>
-        <p id="level-scores"></p>
-    </div>
-
+    <header>
+        <h1>스타리딩 테스트</h1>
+    </header>
+    <main>
+        <div id="test-container">
+            <div id="level-info"></div>
+            <div id="question-container"></div>
+            <button id="next-button" onclick="nextQuestion()">다음 문제</button>
+        </div>
+        <div id="feedback" class="hidden">
+            <h2>테스트 종료</h2>
+            <p id="final-level"></p>
+            <p id="level-scores"></p>
+        </div>
+    </main>
+    <footer>
+        &copy; 2024 스타리딩 테스트
+    </footer>
     <script>
-        // 문제 데이터 정의
-        const problemsByLevel = {
-            0: [
-                {question: "The cat is on the mat. 고양이는 어디에 있나요?", options: ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"], answer: "B"},
-                {question: "I like to eat apples.나는 무엇을 먹는것을 좋아하나요?", options: ["A. 사과", "B. 오렌지", "C. 바나나"], answer: "A"},
-                {question: "The sun is hot. 태양은 어떤가요?", options: ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"], answer: "B"}
-            ],
-            1: [
-                {question: "The dog runs fast. 그 개는 어떻게 달리나요?", options: ["A. 천천히", "B. 빨리", "C. 조용히"], answer: "B"},
-                {question: "I have a red ball. 나는 무슨색의 공을 가지고 있나요?", options: ["A. 파란색", "B. 녹색", "C. 빨간색"], answer: "C"},
-                {question: "She has a yellow hat. 그녀는 무슨 색의 모자를 갖고 있나요?", options: ["A. 노란색", "B. 검은색", "C. 하얀색"], answer: "A"}
-            ],
-            2: [
-                {
-                    question: "Tom has two dogs and one cat. 톰은 몇 마리의 개를 가지고 있나요?",
-                    options: ["A. 하나", "B. 두 마리", "C. 세 마리"],
-                    answer: "B"
-                },
-                {
-                    question: "The flowers in the garden are beautiful. 그 꽃들은 어떤가요?",
-                    options: ["A. 아름답다", "B. 작다", "C. 시들다"],
-                    answer: "A"
-                },
-                {
-                    question: "Sara went to the store to buy some milk. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. Sara는 우유를 사기 위해 가게에 갔다.", "B. Sara는 빵을 사기 위해 가게에 갔다.", "C. Sara는 책을 사기 위해 가게에 갔다."],
-                    answer: "A"
-                },
-                {
-                    question: "The boy is reading a big book. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. 소년은 큰 책을 읽고 있다.", "B. 소년은 작은 책을 읽고 있다.", "C. 소년은 그림을 그리고 있다."],
-                    answer: "A"
-                },
-                {
-                    question: "Mary likes to play the piano every day. 다음 중 맞는 해석을 고르시오..",
-                    options: ["A. Mary는 매일 피아노를 연주하는 것을 좋아한다.", "B. Mary는 매일 기타를 연주하는 것을 좋아한다.", "C. Mary는 매일 노래를 부르는 것을 좋아한다."],
-                    answer: "A"
-                },
-                {
-                    question: "The weather is sunny and warm today. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. 오늘 날씨는 흐리고 추워요.", "B. 오늘 날씨는 맑고 따뜻해요.", "C. 오늘 날씨는 비가 와요."],
-                    answer: "B"
-                },
-                {
-                    question: "John is eating an apple while watching TV. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. John은 텔레비전을 보면서 사과를 먹고 있다.", "B. John은 텔레비전을 보면서 바나나를 먹고 있다.", "C. John은 텔레비전을 보면서 빵을 먹고 있다."],
-                    answer: "A"
-                },
-                {
-                    question: "There is a small boat on the lake. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. 호수에 큰 배가 있다.", "B. 호수에 작은 보트가 있다.", "C. 호수에 물고기가 많다."],
-                    answer: "B"
-                },
-                {
-                    question: "Lucy and her friends are playing soccer in the park. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. Lucy와 그녀의 친구들은 공원에서 농구를 하고 있다.", "B. Lucy와 그녀의 친구들은 공원에서 축구를 하고 있다.", "C. Lucy와 그녀의 친구들은 공원에서 배구를 하고 있다."],
-                    answer: "B"
-                },
-                {
-                    question: "The teacher is explaining the math problem to the students. 다음 중 맞는 해석을 고르시오.",
-                    options: ["A. 선생님은 학생들에게 과학 문제를 설명하고 있다.", "B. 선생님은 학생들에게 수학 문제를 설명하고 있다.", "C. 선생님은 학생들에게 영어 문제를 설명하고 있다."],
-                    answer: "B"
+        let problemsByLevel = {};
+
+        // JSON 파일 로드
+        async function loadProblems() {
+            try {
+                const response = await fetch('problems.json'); // JSON 파일 경로
+                if (!response.ok) {
+                    throw new Error('문제 데이터를 불러오는 데 실패했습니다.');
                 }
-            ],
-            9: [
-                {question: "Advanced Question 1", options: ["A. Option1", "B. Option2", "C. Option3"], answer: "A"},
-                {question: "Advanced Question 2", options: ["A. Option1", "B. Option2", "C. Option3"], answer: "B"},
-                {question: "Advanced Question 3", options: ["A. Option1", "B. Option2", "C. Option3"], answer: "C"}
-            ]
-        };
+                problemsByLevel = await response.json();
+                loadQuestion(); // JSON 데이터 로드 후 문제 초기화
+            } catch (error) {
+                console.error(error);
+                alert('문제를 불러오는 중 오류가 발생했습니다.');
+            }
+        }
 
-
-        // 초기 상태 변수 설정
+        // 상태 변수
         let currentLevel = 0;
         let currentQuestionIndex = 0;
         let correctAnswers = 0;
         const results = {};
 
-        // 문제 로드 함수
+        // 문제 로드
         function loadQuestion() {
-            console.log("loadQuestion 함수 호출"); // 디버깅용 로그
             const levelInfo = document.getElementById("level-info");
-            levelInfo.innerHTML = `=== 레벨 ${currentLevel} 테스트 ===`;
+            levelInfo.innerHTML = `<h2>레벨 ${currentLevel} 테스트</h2>`;
 
             const questionContainer = document.getElementById("question-container");
             questionContainer.innerHTML = "";
@@ -117,7 +152,7 @@
                 const questionDiv = document.createElement("div");
                 questionDiv.className = "question";
                 questionDiv.innerHTML = `<p>${currentQuestionIndex + 1}. ${problem.question}</p>`;
-                
+
                 const optionsList = document.createElement("ul");
                 optionsList.className = "options";
                 problem.options.forEach(option => {
@@ -135,7 +170,6 @@
                 questionDiv.appendChild(optionsList);
                 questionContainer.appendChild(questionDiv);
             } else {
-                // 레벨 평가
                 results[currentLevel] = correctAnswers;
                 if (correctAnswers >= 2 && currentLevel < 9) { 
                     alert(`레벨 ${currentLevel}을 통과하여 레벨 ${currentLevel + 1}으로 이동합니다.`);
@@ -149,7 +183,7 @@
             }
         }
 
-        // 다음 문제로 넘어가기
+        // 다음 문제
         function nextQuestion() {
             const selectedOption = document.querySelector('input[name="option"]:checked');
             if (!selectedOption) {
@@ -168,7 +202,7 @@
             loadQuestion();
         }
 
-        // 테스트 종료 함수
+        // 테스트 종료
         function endTest() {
             document.getElementById("test-container").classList.add("hidden");
             const feedback = document.getElementById("feedback");
@@ -181,12 +215,9 @@
             document.getElementById("level-scores").innerText = scoresText;
         }
 
-        // 초기 로드 시 문제 호출
-        document.addEventListener("DOMContentLoaded", function() {
-            loadQuestion();
-        });
+        // 초기 로드
+        document.addEventListener("DOMContentLoaded", loadProblems);
     </script>
 </body>
 </html>
-
 
