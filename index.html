@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스타리딩 테스트</title>
     <style>
-        /* 기본 스타일 */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -118,7 +117,6 @@
         let allQuestions = [];
         let currentQuestionIndex = 0;
         const userAnswers = [];
-        const maxQuestions = 34;
 
         // JSON 파일 로드
         async function loadProblems() {
@@ -128,7 +126,7 @@
                     throw new Error('문제 데이터를 불러오는 데 실패했습니다.');
                 }
                 problemsByLevel = await response.json();
-                prepareQuestions(); // 질문 준비
+                prepareQuestions();
             } catch (error) {
                 console.error(error);
                 alert('문제를 불러오는 중 오류가 발생했습니다.');
@@ -145,8 +143,9 @@
 
         // 문제 준비
         function prepareQuestions() {
-            for (const level in problemsByLevel) {
-                allQuestions = allQuestions.concat(problemsByLevel[level]);
+            for (const level in problemsByLevel.levels) {
+                const levelQuestions = problemsByLevel.levels[level].map(q => ({ ...q, level }));
+                allQuestions = allQuestions.concat(levelQuestions);
             }
             shuffle(allQuestions);
             loadQuestion();
@@ -154,39 +153,38 @@
 
         // 문제 로드
         function loadQuestion() {
-    const questionContainer = document.getElementById("question-container");
-    questionContainer.innerHTML = "";
+            const questionContainer = document.getElementById("question-container");
+            questionContainer.innerHTML = "";
 
-    if (currentQuestionIndex < maxQuestions) {
-        const problem = allQuestions[currentQuestionIndex];
-        const questionDiv = document.createElement("div");
-        questionDiv.className = "question";
-        questionDiv.innerHTML = `
-            <p>${problem.question}</p>
-            <p style="color: gray; font-size: 0.9em; margin-top: 5px;">${problem.instruction}</p>
-        `;
+            if (currentQuestionIndex < allQuestions.length) {
+                const problem = allQuestions[currentQuestionIndex];
+                const questionDiv = document.createElement("div");
+                questionDiv.className = "question";
+                questionDiv.innerHTML = `
+                    <p>${problem.question}</p>
+                    <p style="color: gray; font-size: 0.9em; margin-top: 5px;">${problem.instruction}</p>
+                `;
 
-        const optionsList = document.createElement("ul");
-        optionsList.className = "options";
-        problem.options.forEach(option => {
-            const li = document.createElement("li");
-            const label = document.createElement("label");
-            const radio = document.createElement("input");
-            radio.type = "radio";
-            radio.name = "option";
-            radio.value = option[0];
-            label.appendChild(radio);
-            label.appendChild(document.createTextNode(option));
-            li.appendChild(label);
-            optionsList.appendChild(li);
-        });
-        questionDiv.appendChild(optionsList);
-        questionContainer.appendChild(questionDiv);
-    } else {
-        endTest();
-    }
-}
-
+                const optionsList = document.createElement("ul");
+                optionsList.className = "options";
+                problem.options.forEach(option => {
+                    const li = document.createElement("li");
+                    const label = document.createElement("label");
+                    const radio = document.createElement("input");
+                    radio.type = "radio";
+                    radio.name = "option";
+                    radio.value = option;
+                    label.appendChild(radio);
+                    label.appendChild(document.createTextNode(option));
+                    li.appendChild(label);
+                    optionsList.appendChild(li);
+                });
+                questionDiv.appendChild(optionsList);
+                questionContainer.appendChild(questionDiv);
+            } else {
+                endTest();
+            }
+        }
 
         // 다음 문제
         function nextQuestion() {
@@ -209,7 +207,7 @@
             feedback.classList.remove("hidden");
 
             const scores = {};
-            for (const level in problemsByLevel) {
+            for (const level in problemsByLevel.levels) {
                 scores[level] = 0;
             }
 
@@ -222,7 +220,7 @@
 
             let scoresText = "<strong>분야별 점수</strong><br>";
             for (const level in scores) {
-                scoresText += `레벨 ${level}: ${scores[level]} / ${problemsByLevel[level].length}<br>`;
+                scoresText += `레벨 ${level}: ${scores[level]} / ${problemsByLevel.levels[level].length}<br>`;
             }
             document.getElementById("level-scores").innerHTML = scoresText;
         }
