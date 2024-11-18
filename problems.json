@@ -1,391 +1,129 @@
 {
-  "0": [
-    {
-      "question": "The bird can fly.",
-      "instruction": "다음 보기 중 새가 할 수 있는 것을 고르세요.",
-      "options": ["A. 헤엄칠 수 있다", "B. 걸을 수 있다", "C. 날 수 있다"],
-      "answer": "C"
-    },
-    {
-      "question": "The cat is on the mat.",
-      "instruction": "고양이가 어디에 있는지 고르세요.",
-      "options": ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"],
-      "answer": "B"
-    },
-    {
-      "question": "I like to eat apples.",
-      "instruction": "화자가 좋아하는 음식을 고르세요.",
-      "options": ["A. 사과", "B. 오렌지", "C. 바나나"],
-      "answer": "A"
-    },
-    {
-      "question": "The sun is hot.",
-      "instruction": "태양이 어떤지 고르세요.",
-      "options": ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"],
-      "answer": "B"
-    },
-    {
-      "question": "The dog barks loudly.",
-      "instruction": "개가 어떻게 짖는지 고르세요.",
-      "options": ["A. 조용히", "B. 시끄럽게", "C. 천천히"],
-      "answer": "B"
-    },
-    {
-      "question": "The boy is running in the park.",
-      "instruction": "소년이 어디서 달리고 있는지 고르세요.",
-      "options": ["A. 공원에서", "B. 집에서", "C. 학교에서"],
-      "answer": "A"
-    },
-    {
-      "question": "The girl drinks water.",
-      "instruction": "소녀가 마시는 것을 고르세요.",
-      "options": ["A. 주스", "B. 우유", "C. 물"],
-      "answer": "C"
-    },
-    {
-      "question": "It is raining outside.",
-      "instruction": "밖의 날씨를 고르세요.",
-      "options": ["A. 비가 온다", "B. 해가 뜬다", "C. 눈이 온다"],
-      "answer": "A"
-    },
-    {
-      "question": "The flowers are colorful.",
-      "instruction": "꽃이 어떤지 고르세요.",
-      "options": ["A. 어둡다", "B. 화려하다", "C. 작다"],
-      "answer": "B"
-    },
-    {
-      "question": "The child is sleeping.",
-      "instruction": "아이의 상태를 고르세요.",
-      "options": ["A. 걷고 있다", "B. 자고 있다", "C. 공부하고 있다"],
-      "answer": "B"
-    },
-    {
-      "question": "I have two pencils.",
-      "instruction": "화자가 가진 연필의 개수를 고르세요.",
-      "options": ["A. 하나", "B. 두 개", "C. 세 개"],
-      "answer": "B"
-    },
-    {
-      "question": "The book is on the table.",
-      "instruction": "책이 어디에 있는지 고르세요.",
-      "options": ["A. 책상 위에", "B. 바닥 위에", "C. 의자 위에"],
-      "answer": "A"
-    },
-    {
-      "question": "The sky is blue.",
-      "instruction": "하늘이 어떤지 고르세요.",
-      "options": ["A. 파랗다", "B. 빨갛다", "C. 노랗다"],
-      "answer": "A"
-    },
-    {
-      "question": "The clock shows three o'clock.",
-      "instruction": "시계가 가리키는 시간을 고르세요.",
-      "options": ["A. 두 시", "B. 세 시", "C. 네 시"],
-      "answer": "B"
-    },
-    {
-      "question": "The teacher is writing on the board.",
-      "instruction": "선생님이 무엇을 하고 있는지 고르세요.",
-      "options": ["A. 읽고 있다", "B. 쓰고 있다", "C. 말하고 있다"],
-      "answer": "B"
-    },
-    {
-      "question": "The car is red.",
-      "instruction": "차의 색깔을 고르세요.",
-      "options": ["A. 파란색", "B. 빨간색", "C. 검은색"],
-      "answer": "B"
-    },
-    {
-      "question": "I see a bird in the tree.",
-      "instruction": "화자가 새를 본 장소를 고르세요.",
-      "options": ["A. 땅에서", "B. 나무에서", "C. 하늘에서"],
-      "answer": "B"
-    },
-    {
-      "question": "She is eating a sandwich.",
-      "instruction": "그녀가 먹고 있는 것을 고르세요.",
-      "options": ["A. 피자", "B. 샌드위치", "C. 스파게티"],
-      "answer": "B"
-    },
-    {
-      "question": "The man is driving a car.",
-      "instruction": "남자가 무엇을 하고 있는지 고르세요.",
-      "options": ["A. 자동차를 운전하고 있다", "B. 자전거를 타고 있다", "C. 걷고 있다"],
-      "answer": "A"
-    },
-    {
-      "question": "The baby is crying.",
-      "instruction": "아기의 상태를 고르세요.",
-      "options": ["A. 울고 있다", "B. 웃고 있다", "C. 자고 있다"],
-      "answer": "A"
-    },
-    {
-      "question": "The apples are on the plate.",
-      "instruction": "사과가 어디에 있는지 고르세요.",
-      "options": ["A. 접시 위에", "B. 바닥 위에", "C. 책상 위에"],
-      "answer": "A"
-    },
-    {
-      "question": "The fish is swimming.",
-      "instruction": "물고기의 상태를 고르세요.",
-      "options": ["A. 걷고 있다", "B. 수영하고 있다", "C. 자고 있다"],
-      "answer": "B"
-    },
-    {
-      "question": "The house is big.",
-      "instruction": "집이 어떤지 고르세요.",
-      "options": ["A. 크다", "B. 작다", "C. 오래되었다"],
-      "answer": "A"
-    },
-    {
-      "question": "The chair is next to the table.",
-      "instruction": "의자가 어디에 있는지 고르세요.",
-      "options": ["A. 테이블 옆에", "B. 테이블 위에", "C. 테이블 아래에"],
-      "answer": "A"
-    },
-    {
-        "question": "She ___ a teacher.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. is", "B. are", "C. am"],
-        "answer": "A"
-    },
-    {
-        "question": "I ___ an apple every morning.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. eats", "B. eat", "C. eating"],
+  "levels": {
+    "0": [
+      {
+        "question": "The bird can fly.",
+        "instruction": "다음 보기 중 새가 할 수 있는 것을 고르세요.",
+        "options": ["A. 헤엄칠 수 있다", "B. 걸을 수 있다", "C. 날 수 있다"],
+        "answer": "C"
+      },
+      {
+        "question": "The cat is on the mat.",
+        "instruction": "고양이가 어디에 있는지 고르세요.",
+        "options": ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"],
         "answer": "B"
-    },
-    {
-        "question": "The dog ___ running in the park.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. is", "B. are", "C. am"],
+      },
+      {
+        "question": "I like to eat apples.",
+        "instruction": "화자가 좋아하는 음식을 고르세요.",
+        "options": ["A. 사과", "B. 오렌지", "C. 바나나"],
         "answer": "A"
-    },
-    {
-        "question": "He ___ not like pizza.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. do", "B. does", "C. doing"],
+      },
+      {
+        "question": "The sun is hot.",
+        "instruction": "태양이 어떤지 고르세요.",
+        "options": ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"],
         "answer": "B"
-    },
-    {
+      },
+      {
+        "question": "The dog barks loudly.",
+        "instruction": "개가 어떻게 짖는지 고르세요.",
+        "options": ["A. 조용히", "B. 시끄럽게", "C. 천천히"],
+        "answer": "B"
+      },
+      {
+        "question": "The boy is running in the park.",
+        "instruction": "소년이 어디서 달리고 있는지 고르세요.",
+        "options": ["A. 공원에서", "B. 집에서", "C. 학교에서"],
+        "answer": "A"
+      },
+      {
+        "question": "The girl drinks water.",
+        "instruction": "소녀가 마시는 것을 고르세요.",
+        "options": ["A. 주스", "B. 우유", "C. 물"],
+        "answer": "C"
+      },
+      {
+        "question": "It is raining outside.",
+        "instruction": "밖의 날씨를 고르세요.",
+        "options": ["A. 비가 온다", "B. 해가 뜬다", "C. 눈이 온다"],
+        "answer": "A"
+      },
+      {
+        "question": "The flowers are colorful.",
+        "instruction": "꽃이 어떤지 고르세요.",
+        "options": ["A. 어둡다", "B. 화려하다", "C. 작다"],
+        "answer": "B"
+      },
+      {
+        "question": "The child is sleeping.",
+        "instruction": "아이의 상태를 고르세요.",
+        "options": ["A. 걷고 있다", "B. 자고 있다", "C. 공부하고 있다"],
+        "answer": "B"
+      }
+    ],
+    "1": [
+      {
+        "question": "The sun rises in the east.",
+        "instruction": "태양이 어디에서 뜨는지 고르세요.",
+        "options": ["A. 서쪽", "B. 동쪽", "C. 남쪽"],
+        "answer": "B"
+      },
+      {
+        "question": "I have three brothers.",
+        "instruction": "화자가 형제를 몇 명 가지고 있는지 고르세요.",
+        "options": ["A. 두 명", "B. 세 명", "C. 네 명"],
+        "answer": "B"
+      },
+      {
         "question": "They ___ playing soccer now.",
         "instruction": "빈칸에 들어갈 단어를 고르세요.",
         "options": ["A. is", "B. are", "C. am"],
         "answer": "B"
-    },
-    {
-        "question": "___ you like ice cream?",
+      },
+      {
+        "question": "The dog is running.",
+        "instruction": "개가 무엇을 하고 있는지 고르세요.",
+        "options": ["A. 걷고 있다", "B. 달리고 있다", "C. 자고 있다"],
+        "answer": "B"
+      },
+      {
+        "question": "John ___ to school every day.",
         "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. Do", "B. Does", "C. Did"],
+        "options": ["A. go", "B. goes", "C. going"],
+        "answer": "B"
+      },
+      {
+        "question": "The cat is under the table.",
+        "instruction": "고양이가 어디에 있는지 고르세요.",
+        "options": ["A. 책상 위에", "B. 책상 아래에", "C. 의자 옆에"],
+        "answer": "B"
+      },
+      {
+        "question": "The boy ___ a red ball.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. have", "B. has", "C. had"],
+        "answer": "B"
+      },
+      {
+        "question": "I am ___ my homework now.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. do", "B. doing", "C. did"],
+        "answer": "B"
+      },
+      {
+        "question": "She is taller than her sister.",
+        "instruction": "그녀는 누구보다 키가 큰지 고르세요.",
+        "options": ["A. 그녀의 친구", "B. 그녀의 언니", "C. 그녀의 엄마"],
+        "answer": "B"
+      },
+      {
+        "question": "Tom can ___ very fast.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. run", "B. runs", "C. running"],
         "answer": "A"
-    },
-    {
-        "question": "I have ___ orange.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. a", "B. an", "C. the"],
-        "answer": "B"
-    },
-    {
-        "question": "We ___ at home yesterday.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. was", "B. were", "C. are"],
-        "answer": "B"
-    },
-    {
-        "question": "He ___ to the store tomorrow.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. go", "B. goes", "C. will go"],
-        "answer": "C"
-    },
-    {
-        "question": "The cat ___ sleeping under the table.",
-        "instruction": "빈칸에 들어갈 단어를 고르세요.",
-        "options": ["A. is", "B. are", "C. am"],
-        "answer": "A"
-    },
-    {
-        "question": "Tom has a black dog.",
-        "instruction": "Tom이 가진 개의 색깔을 고르세요.",
-        "options": ["A. 하얀색", "B. 검은색", "C. 갈색"],
-        "answer": "B"
-    },
-    {
-        "question": "Sara is reading a book in the library.",
-        "instruction": "Sara가 책을 읽고 있는 장소를 고르세요.",
-        "options": ["A. 공원", "B. 도서관", "C. 집"],
-        "answer": "B"
-    },
-    {
-        "question": "The apple is red and sweet.",
-        "instruction": "사과의 특징을 고르세요.",
-        "options": ["A. 녹색이고 시다", "B. 빨갛고 달다", "C. 노랗고 쓰다"],
-        "answer": "B"
-    },
-    {
-        "question": "John is drinking milk in the kitchen.",
-        "instruction": "John이 우유를 마시고 있는 장소를 고르세요.",
-        "options": ["A. 거실", "B. 침실", "C. 부엌"],
-        "answer": "C"
-    },
-    {
-        "question": "The flowers in the garden are beautiful.",
-        "instruction": "정원에 있는 꽃들이 어떤지 고르세요.",
-        "options": ["A. 아름답다", "B. 시들다", "C. 작다"],
-        "answer": "A"
-    }
-  ]
-  "1": [
-    {
-      "question": "The sun rises in the east.",
-      "instruction": "태양이 어디에서 뜨는지 고르세요.",
-      "options": ["A. 서쪽", "B. 동쪽", "C. 남쪽"],
-      "answer": "B"
-    },
-    {
-      "question": "I have three brothers.",
-      "instruction": "화자가 형제를 몇 명 가지고 있는지 고르세요.",
-      "options": ["A. 두 명", "B. 세 명", "C. 네 명"],
-      "answer": "B"
-    },
-    {
-      "question": "They ___ playing soccer now.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. is", "B. are", "C. am"],
-      "answer": "B"
-    },
-    {
-      "question": "The dog is running.",
-      "instruction": "개가 무엇을 하고 있는지 고르세요.",
-      "options": ["A. 걷고 있다", "B. 달리고 있다", "C. 자고 있다"],
-      "answer": "B"
-    },
-    {
-      "question": "John ___ to school every day.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. go", "B. goes", "C. going"],
-      "answer": "B"
-    },
-    {
-      "question": "The cat is under the table.",
-      "instruction": "고양이가 어디에 있는지 고르세요.",
-      "options": ["A. 책상 위에", "B. 책상 아래에", "C. 의자 옆에"],
-      "answer": "B"
-    },
-    {
-      "question": "The boy ___ a red ball.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. have", "B. has", "C. had"],
-      "answer": "B"
-    },
-    {
-      "question": "I am ___ my homework now.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. do", "B. doing", "C. did"],
-      "answer": "B"
-    },
-    {
-      "question": "She is taller than her sister.",
-      "instruction": "그녀는 누구보다 키가 큰지 고르세요.",
-      "options": ["A. 그녀의 친구", "B. 그녀의 언니", "C. 그녀의 엄마"],
-      "answer": "B"
-    },
-    {
-      "question": "Tom can ___ very fast.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. run", "B. runs", "C. running"],
-      "answer": "A"
-    },
-    {
-      "question": "We go to the park every Saturday.",
-      "instruction": "우리가 공원에 가는 요일을 고르세요.",
-      "options": ["A. 월요일", "B. 토요일", "C. 일요일"],
-      "answer": "B"
-    },
-    {
-      "question": "The book is very interesting.",
-      "instruction": "책이 어떤지 고르세요.",
-      "options": ["A. 지루하다", "B. 재미있다", "C. 어렵다"],
-      "answer": "B"
-    },
-    {
-      "question": "She ___ not like apples.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. do", "B. does", "C. doing"],
-      "answer": "B"
-    },
-    {
-      "question": "I saw a big bird in the sky.",
-      "instruction": "화자가 큰 새를 본 장소를 고르세요.",
-      "options": ["A. 나무에서", "B. 하늘에서", "C. 물에서"],
-      "answer": "B"
-    },
-    {
-      "question": "The flowers in the garden are beautiful.",
-      "instruction": "정원에 있는 꽃들이 어떤지 고르세요.",
-      "options": ["A. 시들다", "B. 아름답다", "C. 작다"],
-      "answer": "B"
-    },
-    {
-      "question": "The dog ___ loudly at night.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. bark", "B. barks", "C. barking"],
-      "answer": "B"
-    },
-    {
-      "question": "We ___ happy to see you.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. am", "B. is", "C. are"],
-      "answer": "C"
-    },
-    {
-      "question": "She ___ to the store yesterday.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. go", "B. went", "C. goes"],
-      "answer": "B"
-    },
-    {
-      "question": "The cat is ___ the chair.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. under", "B. between", "C. in"],
-      "answer": "A"
-    },
-    {
-      "question": "He likes to ___ books in his free time.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. read", "B. reads", "C. reading"],
-      "answer": "A"
-    },
-    {
-      "question": "She is ___ than her brother.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. tall", "B. taller", "C. tallest"],
-      "answer": "B"
-    },
-    {
-      "question": "The baby is crying because he is ___.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. happy", "B. tired", "C. hungry"],
-      "answer": "C"
-    },
-    {
-      "question": "We ___ to the beach last weekend.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. go", "B. went", "C. goes"],
-      "answer": "B"
-    },
-    {
-      "question": "She has ___ apple in her bag.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. a", "B. an", "C. two"],
-      "answer": "B"
-    },
-    {
-      "question": "The weather is ___ and sunny today.",
-      "instruction": "빈칸에 들어갈 단어를 고르세요.",
-      "options": ["A. cold", "B. warm", "C. cloudy"],
-      "answer": "B"
-    }
-  ]
+      }
+    ]
+  }
 }
- 
+
