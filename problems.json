@@ -143,6 +143,96 @@
       "instruction": "의자가 어디에 있는지 고르세요.",
       "options": ["A. 테이블 옆에", "B. 테이블 위에", "C. 테이블 아래에"],
       "answer": "A"
+    },
+    {
+        "question": "She ___ a teacher.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. is", "B. are", "C. am"],
+        "answer": "A"
+    },
+    {
+        "question": "I ___ an apple every morning.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. eats", "B. eat", "C. eating"],
+        "answer": "B"
+    },
+    {
+        "question": "The dog ___ running in the park.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. is", "B. are", "C. am"],
+        "answer": "A"
+    },
+    {
+        "question": "He ___ not like pizza.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. do", "B. does", "C. doing"],
+        "answer": "B"
+    },
+    {
+        "question": "They ___ playing soccer now.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. is", "B. are", "C. am"],
+        "answer": "B"
+    },
+    {
+        "question": "___ you like ice cream?",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. Do", "B. Does", "C. Did"],
+        "answer": "A"
+    },
+    {
+        "question": "I have ___ orange.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. a", "B. an", "C. the"],
+        "answer": "B"
+    },
+    {
+        "question": "We ___ at home yesterday.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. was", "B. were", "C. are"],
+        "answer": "B"
+    },
+    {
+        "question": "He ___ to the store tomorrow.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. go", "B. goes", "C. will go"],
+        "answer": "C"
+    },
+    {
+        "question": "The cat ___ sleeping under the table.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. is", "B. are", "C. am"],
+        "answer": "A"
+    },
+    {
+        "question": "Tom has a black dog.",
+        "instruction": "Tom이 가진 개의 색깔을 고르세요.",
+        "options": ["A. 하얀색", "B. 검은색", "C. 갈색"],
+        "answer": "B"
+    },
+    {
+        "question": "Sara is reading a book in the library.",
+        "instruction": "Sara가 책을 읽고 있는 장소를 고르세요.",
+        "options": ["A. 공원", "B. 도서관", "C. 집"],
+        "answer": "B"
+    },
+    {
+        "question": "The apple is red and sweet.",
+        "instruction": "사과의 특징을 고르세요.",
+        "options": ["A. 녹색이고 시다", "B. 빨갛고 달다", "C. 노랗고 쓰다"],
+        "answer": "B"
+    },
+    {
+        "question": "John is drinking milk in the kitchen.",
+        "instruction": "John이 우유를 마시고 있는 장소를 고르세요.",
+        "options": ["A. 거실", "B. 침실", "C. 부엌"],
+        "answer": "C"
+    },
+    {
+        "question": "The flowers in the garden are beautiful.",
+        "instruction": "정원에 있는 꽃들이 어떤지 고르세요.",
+        "options": ["A. 아름답다", "B. 시들다", "C. 작다"],
+        "answer": "A"
     }
   ]
 }
