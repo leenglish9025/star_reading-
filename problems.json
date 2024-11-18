@@ -23,6 +23,126 @@
       "instruction": "태양이 어떤지 고르세요.",
       "options": ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"],
       "answer": "B"
+    },
+    {
+      "question": "The dog barks loudly.",
+      "instruction": "개가 어떻게 짖는지 고르세요.",
+      "options": ["A. 조용히", "B. 시끄럽게", "C. 천천히"],
+      "answer": "B"
+    },
+    {
+      "question": "The boy is running in the park.",
+      "instruction": "소년이 어디서 달리고 있는지 고르세요.",
+      "options": ["A. 공원에서", "B. 집에서", "C. 학교에서"],
+      "answer": "A"
+    },
+    {
+      "question": "The girl drinks water.",
+      "instruction": "소녀가 마시는 것을 고르세요.",
+      "options": ["A. 주스", "B. 우유", "C. 물"],
+      "answer": "C"
+    },
+    {
+      "question": "It is raining outside.",
+      "instruction": "밖의 날씨를 고르세요.",
+      "options": ["A. 비가 온다", "B. 해가 뜬다", "C. 눈이 온다"],
+      "answer": "A"
+    },
+    {
+      "question": "The flowers are colorful.",
+      "instruction": "꽃이 어떤지 고르세요.",
+      "options": ["A. 어둡다", "B. 화려하다", "C. 작다"],
+      "answer": "B"
+    },
+    {
+      "question": "The child is sleeping.",
+      "instruction": "아이의 상태를 고르세요.",
+      "options": ["A. 걷고 있다", "B. 자고 있다", "C. 공부하고 있다"],
+      "answer": "B"
+    },
+    {
+      "question": "I have two pencils.",
+      "instruction": "화자가 가진 연필의 개수를 고르세요.",
+      "options": ["A. 하나", "B. 두 개", "C. 세 개"],
+      "answer": "B"
+    },
+    {
+      "question": "The book is on the table.",
+      "instruction": "책이 어디에 있는지 고르세요.",
+      "options": ["A. 책상 위에", "B. 바닥 위에", "C. 의자 위에"],
+      "answer": "A"
+    },
+    {
+      "question": "The sky is blue.",
+      "instruction": "하늘이 어떤지 고르세요.",
+      "options": ["A. 파랗다", "B. 빨갛다", "C. 노랗다"],
+      "answer": "A"
+    },
+    {
+      "question": "The clock shows three o'clock.",
+      "instruction": "시계가 가리키는 시간을 고르세요.",
+      "options": ["A. 두 시", "B. 세 시", "C. 네 시"],
+      "answer": "B"
+    },
+    {
+      "question": "The teacher is writing on the board.",
+      "instruction": "선생님이 무엇을 하고 있는지 고르세요.",
+      "options": ["A. 읽고 있다", "B. 쓰고 있다", "C. 말하고 있다"],
+      "answer": "B"
+    },
+    {
+      "question": "The car is red.",
+      "instruction": "차의 색깔을 고르세요.",
+      "options": ["A. 파란색", "B. 빨간색", "C. 검은색"],
+      "answer": "B"
+    },
+    {
+      "question": "I see a bird in the tree.",
+      "instruction": "화자가 새를 본 장소를 고르세요.",
+      "options": ["A. 땅에서", "B. 나무에서", "C. 하늘에서"],
+      "answer": "B"
+    },
+    {
+      "question": "She is eating a sandwich.",
+      "instruction": "그녀가 먹고 있는 것을 고르세요.",
+      "options": ["A. 피자", "B. 샌드위치", "C. 스파게티"],
+      "answer": "B"
+    },
+    {
+      "question": "The man is driving a car.",
+      "instruction": "남자가 무엇을 하고 있는지 고르세요.",
+      "options": ["A. 자동차를 운전하고 있다", "B. 자전거를 타고 있다", "C. 걷고 있다"],
+      "answer": "A"
+    },
+    {
+      "question": "The baby is crying.",
+      "instruction": "아기의 상태를 고르세요.",
+      "options": ["A. 울고 있다", "B. 웃고 있다", "C. 자고 있다"],
+      "answer": "A"
+    },
+    {
+      "question": "The apples are on the plate.",
+      "instruction": "사과가 어디에 있는지 고르세요.",
+      "options": ["A. 접시 위에", "B. 바닥 위에", "C. 책상 위에"],
+      "answer": "A"
+    },
+    {
+      "question": "The fish is swimming.",
+      "instruction": "물고기의 상태를 고르세요.",
+      "options": ["A. 걷고 있다", "B. 수영하고 있다", "C. 자고 있다"],
+      "answer": "B"
+    },
+    {
+      "question": "The house is big.",
+      "instruction": "집이 어떤지 고르세요.",
+      "options": ["A. 크다", "B. 작다", "C. 오래되었다"],
+      "answer": "A"
+    },
+    {
+      "question": "The chair is next to the table.",
+      "instruction": "의자가 어디에 있는지 고르세요.",
+      "options": ["A. 테이블 옆에", "B. 테이블 위에", "C. 테이블 아래에"],
+      "answer": "A"
     }
   ]
 }
