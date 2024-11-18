@@ -235,4 +235,157 @@
         "answer": "A"
     }
   ]
+  "1": [
+    {
+      "question": "The sun rises in the east.",
+      "instruction": "태양이 어디에서 뜨는지 고르세요.",
+      "options": ["A. 서쪽", "B. 동쪽", "C. 남쪽"],
+      "answer": "B"
+    },
+    {
+      "question": "I have three brothers.",
+      "instruction": "화자가 형제를 몇 명 가지고 있는지 고르세요.",
+      "options": ["A. 두 명", "B. 세 명", "C. 네 명"],
+      "answer": "B"
+    },
+    {
+      "question": "They ___ playing soccer now.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. is", "B. are", "C. am"],
+      "answer": "B"
+    },
+    {
+      "question": "The dog is running.",
+      "instruction": "개가 무엇을 하고 있는지 고르세요.",
+      "options": ["A. 걷고 있다", "B. 달리고 있다", "C. 자고 있다"],
+      "answer": "B"
+    },
+    {
+      "question": "John ___ to school every day.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. go", "B. goes", "C. going"],
+      "answer": "B"
+    },
+    {
+      "question": "The cat is under the table.",
+      "instruction": "고양이가 어디에 있는지 고르세요.",
+      "options": ["A. 책상 위에", "B. 책상 아래에", "C. 의자 옆에"],
+      "answer": "B"
+    },
+    {
+      "question": "The boy ___ a red ball.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. have", "B. has", "C. had"],
+      "answer": "B"
+    },
+    {
+      "question": "I am ___ my homework now.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. do", "B. doing", "C. did"],
+      "answer": "B"
+    },
+    {
+      "question": "She is taller than her sister.",
+      "instruction": "그녀는 누구보다 키가 큰지 고르세요.",
+      "options": ["A. 그녀의 친구", "B. 그녀의 언니", "C. 그녀의 엄마"],
+      "answer": "B"
+    },
+    {
+      "question": "Tom can ___ very fast.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. run", "B. runs", "C. running"],
+      "answer": "A"
+    },
+    {
+      "question": "We go to the park every Saturday.",
+      "instruction": "우리가 공원에 가는 요일을 고르세요.",
+      "options": ["A. 월요일", "B. 토요일", "C. 일요일"],
+      "answer": "B"
+    },
+    {
+      "question": "The book is very interesting.",
+      "instruction": "책이 어떤지 고르세요.",
+      "options": ["A. 지루하다", "B. 재미있다", "C. 어렵다"],
+      "answer": "B"
+    },
+    {
+      "question": "She ___ not like apples.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. do", "B. does", "C. doing"],
+      "answer": "B"
+    },
+    {
+      "question": "I saw a big bird in the sky.",
+      "instruction": "화자가 큰 새를 본 장소를 고르세요.",
+      "options": ["A. 나무에서", "B. 하늘에서", "C. 물에서"],
+      "answer": "B"
+    },
+    {
+      "question": "The flowers in the garden are beautiful.",
+      "instruction": "정원에 있는 꽃들이 어떤지 고르세요.",
+      "options": ["A. 시들다", "B. 아름답다", "C. 작다"],
+      "answer": "B"
+    },
+    {
+      "question": "The dog ___ loudly at night.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. bark", "B. barks", "C. barking"],
+      "answer": "B"
+    },
+    {
+      "question": "We ___ happy to see you.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. am", "B. is", "C. are"],
+      "answer": "C"
+    },
+    {
+      "question": "She ___ to the store yesterday.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. go", "B. went", "C. goes"],
+      "answer": "B"
+    },
+    {
+      "question": "The cat is ___ the chair.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. under", "B. between", "C. in"],
+      "answer": "A"
+    },
+    {
+      "question": "He likes to ___ books in his free time.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. read", "B. reads", "C. reading"],
+      "answer": "A"
+    },
+    {
+      "question": "She is ___ than her brother.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. tall", "B. taller", "C. tallest"],
+      "answer": "B"
+    },
+    {
+      "question": "The baby is crying because he is ___.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. happy", "B. tired", "C. hungry"],
+      "answer": "C"
+    },
+    {
+      "question": "We ___ to the beach last weekend.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. go", "B. went", "C. goes"],
+      "answer": "B"
+    },
+    {
+      "question": "She has ___ apple in her bag.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. a", "B. an", "C. two"],
+      "answer": "B"
+    },
+    {
+      "question": "The weather is ___ and sunny today.",
+      "instruction": "빈칸에 들어갈 단어를 고르세요.",
+      "options": ["A. cold", "B. warm", "C. cloudy"],
+      "answer": "B"
+    }
+  ]
 }
+ 
