@@ -82,6 +82,12 @@
         #results {
             display: none;
         }
+
+        #timer {
+            color: red;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
     </style>
 </head>
 <body>
@@ -91,6 +97,7 @@
     </header>
     <main>
         <div id="question-container"></div>
+        <div id="timer"></div>
         <button id="next-button" style="display:none;">다음 문제</button>
         <div id="results"></div>
     </main>
@@ -101,13 +108,14 @@
         let currentIndex = 0;
         let correctAnswers = 0;
         let problems = [];
+        let timerInterval;
 
         // JSON 파일 로드
         async function loadProblems() {
             try {
                 const response = await fetch('problems.json');
                 const data = await response.json();
-                problems = data[currentLevel].slice(0, getProblemCountForLevel(currentLevel));
+                problems = data.levels[currentLevel].slice(0, getProblemCountForLevel(currentLevel));
                 shuffle(problems);
                 loadQuestion();
             } catch (error) {
@@ -167,11 +175,18 @@
 
         // 시간 제한 설정
         function startTimer(timeLimit, onTimeout) {
+            clearInterval(timerInterval);
             let timeLeft = timeLimit;
-            const timer = setInterval(() => {
+            const timerDisplay = document.getElementById("timer");
+            timerDisplay.innerText = `남은 시간: ${timeLeft}초`;
+
+            timerInterval = setInterval(() => {
                 timeLeft--;
+                timerDisplay.innerText = `남은 시간: ${timeLeft}초`;
+
                 if (timeLeft <= 0) {
-                    clearInterval(timer);
+                    clearInterval(timerInterval);
+                    timerDisplay.innerText = "시간 초과!";
                     onTimeout();
                 }
             }, 1000);
@@ -192,6 +207,7 @@
             const successRate = (correctAnswers / problems.length) * 100;
             if (successRate >= 70) {
                 if (currentLevel < 13) {
+                    alert(`레벨 ${currentLevel}을 통과하셨습니다!`);
                     currentLevel++;
                     currentIndex = 0;
                     correctAnswers = 0;
@@ -206,21 +222,8 @@
 
         // 성적표 표시
         function showResults() {
-    // 성적 데이터를 localStorage에 저장
-    const results = {
-        finalLevel: currentLevel,
-        scoreData: [
-            { area: "Vocabulary", correct: 12, score: 60, percentage: "100%" },
-            { area: "Grammar", correct: 4, score: 20, percentage: "100%" },
-            { area: "Reading", correct: 4, score: 20, percentage: "100%" }
-        ]
-    };
-    localStorage.setItem("results", JSON.stringify(results));
-
-    // 성적표 페이지로 이동
-    window.location.href = "results.html";
-}
-
+            alert(`테스트가 종료되었습니다. 당신의 최종 레벨: ${currentLevel}`);
+            // 성적표 페이지로 이동 또는 결과 표시
         }
 
         // 초기화
@@ -230,6 +233,7 @@
     </script>
 </body>
 </html>
+
 
 
 
