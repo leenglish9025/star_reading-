@@ -60,6 +60,66 @@
         "instruction": "아이의 상태를 고르세요.",
         "options": ["A. 걷고 있다", "B. 자고 있다", "C. 공부하고 있다"],
         "answer": "B"
+      },
+        {
+        "question": "The bird can fly.",
+        "instruction": "다음 보기 중 새가 할 수 있는 것을 고르세요.",
+        "options": ["A. 헤엄칠 수 있다", "B. 걸을 수 있다", "C. 날 수 있다"],
+        "answer": "C"
+      },
+      {
+        "question": "The cat is on the mat.",
+        "instruction": "고양이가 어디에 있는지 고르세요.",
+        "options": ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"],
+        "answer": "B"
+      },
+      {
+        "question": "I like to eat apples.",
+        "instruction": "화자가 좋아하는 음식을 고르세요.",
+        "options": ["A. 사과", "B. 오렌지", "C. 바나나"],
+        "answer": "A"
+      },
+      {
+        "question": "The sun is hot.",
+        "instruction": "태양이 어떤지 고르세요.",
+        "options": ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"],
+        "answer": "B"
+      },
+      {
+        "question": "The dog barks loudly.",
+        "instruction": "개가 어떻게 짖는지 고르세요.",
+        "options": ["A. 조용히", "B. 시끄럽게", "C. 천천히"],
+        "answer": "B"
+      },
+      {
+        "question": "The boy is running in the park.",
+        "instruction": "소년이 어디서 달리고 있는지 고르세요.",
+        "options": ["A. 공원에서", "B. 집에서", "C. 학교에서"],
+        "answer": "A"
+      },
+      {
+        "question": "The girl drinks water.",
+        "instruction": "소녀가 마시는 것을 고르세요.",
+        "options": ["A. 주스", "B. 우유", "C. 물"],
+        "answer": "C"
+      },
+      {
+        "question": "It is raining outside.",
+        "instruction": "밖의 날씨를 고르세요.",
+        "options": ["A. 비가 온다", "B. 해가 뜬다", "C. 눈이 온다"],
+        "answer": "A"
+      },
+      {
+        "question": "The flowers are colorful.",
+        "instruction": "꽃이 어떤지 고르세요.",
+        "options": ["A. 어둡다", "B. 화려하다", "C. 작다"],
+        "answer": "B"
+      },
+      {
+        "question": "The child is sleeping.",
+        "instruction": "아이의 상태를 고르세요.",
+        "options": ["A. 걷고 있다", "B. 자고 있다", "C. 공부하고 있다"],
+        "answer": "B"
       }
     ],
     "1": [
@@ -122,69 +182,6 @@
         "instruction": "빈칸에 들어갈 단어를 고르세요.",
         "options": ["A. run", "B. runs", "C. running"],
         "answer": "A"
-      },
-      {
-  "levels": {
-    "0": [
-      {
-        "question": "The bird can fly.",
-        "instruction": "다음 보기 중 새가 할 수 있는 것을 고르세요.",
-        "options": ["A. 헤엄칠 수 있다", "B. 걸을 수 있다", "C. 날 수 있다"],
-        "answer": "C"
-      },
-      {
-        "question": "The cat is on the mat.",
-        "instruction": "고양이가 어디에 있는지 고르세요.",
-        "options": ["A. 침대 위에", "B. 매트 위에", "C. 의자 위에"],
-        "answer": "B"
-      },
-      {
-        "question": "I like to eat apples.",
-        "instruction": "화자가 좋아하는 음식을 고르세요.",
-        "options": ["A. 사과", "B. 오렌지", "C. 바나나"],
-        "answer": "A"
-      },
-      {
-        "question": "The sun is hot.",
-        "instruction": "태양이 어떤지 고르세요.",
-        "options": ["A. 차가워요", "B. 뜨거워요", "C. 흐려요"],
-        "answer": "B"
-      },
-      {
-        "question": "The dog barks loudly.",
-        "instruction": "개가 어떻게 짖는지 고르세요.",
-        "options": ["A. 조용히", "B. 시끄럽게", "C. 천천히"],
-        "answer": "B"
-      },
-      {
-        "question": "The boy is running in the park.",
-        "instruction": "소년이 어디서 달리고 있는지 고르세요.",
-        "options": ["A. 공원에서", "B. 집에서", "C. 학교에서"],
-        "answer": "A"
-      },
-      {
-        "question": "The girl drinks water.",
-        "instruction": "소녀가 마시는 것을 고르세요.",
-        "options": ["A. 주스", "B. 우유", "C. 물"],
-        "answer": "C"
-      },
-      {
-        "question": "It is raining outside.",
-        "instruction": "밖의 날씨를 고르세요.",
-        "options": ["A. 비가 온다", "B. 해가 뜬다", "C. 눈이 온다"],
-        "answer": "A"
-      },
-      {
-        "question": "The flowers are colorful.",
-        "instruction": "꽃이 어떤지 고르세요.",
-        "options": ["A. 어둡다", "B. 화려하다", "C. 작다"],
-        "answer": "B"
-      },
-      {
-        "question": "The child is sleeping.",
-        "instruction": "아이의 상태를 고르세요.",
-        "options": ["A. 걷고 있다", "B. 자고 있다", "C. 공부하고 있다"],
-        "answer": "B"
       }
     ]
   }
