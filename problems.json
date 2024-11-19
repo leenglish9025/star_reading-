@@ -305,9 +305,132 @@
         "options": ["A. 집 안", "B. 밖", "C. 공원"],
         "answer": "B"
       }
+    ],
+    "3": [
+      {
+        "question": "She likes to read books about animals.",
+        "instruction": "그녀가 좋아하는 책의 종류를 고르세요.",
+        "options": ["A. 동물", "B. 과학", "C. 요리"],
+        "answer": "A"
+      },
+      {
+        "question": "The flowers in the garden are blooming.",
+        "instruction": "정원에 있는 꽃의 상태를 고르세요.",
+        "options": ["A. 시들다", "B. 피다", "C. 떨어지다"],
+        "answer": "B"
+      },
+      {
+        "question": "He usually ___ breakfast at 7 AM.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. eat", "B. eats", "C. eating"],
+        "answer": "B"
+      },
+      {
+        "question": "The girl is taller than her brother.",
+        "instruction": "소녀의 키가 어떤지 고르세요.",
+        "options": ["A. 키가 작다", "B. 키가 크다", "C. 키가 같다"],
+        "answer": "B"
+      },
+      {
+        "question": "We ___ to the zoo last Sunday.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. go", "B. went", "C. going"],
+        "answer": "B"
+      },
+      {
+        "question": "He is carrying a heavy bag.",
+        "instruction": "그가 가지고 있는 가방의 상태를 고르세요.",
+        "options": ["A. 무겁다", "B. 가볍다", "C. 크다"],
+        "answer": "A"
+      },
+      {
+        "question": "The apples are sweet and juicy.",
+        "instruction": "사과의 맛을 고르세요.",
+        "options": ["A. 달고 촉촉하다", "B. 시고 딱딱하다", "C. 쓰고 마르다"],
+        "answer": "A"
+      },
+      {
+        "question": "The movie was exciting and fun.",
+        "instruction": "영화의 느낌을 고르세요.",
+        "options": ["A. 재미없다", "B. 신나고 재미있다", "C. 무섭다"],
+        "answer": "B"
+      },
+      {
+        "question": "She ___ her homework before dinner.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. finish", "B. finishes", "C. finishing"],
+        "answer": "B"
+      },
+      {
+        "question": "The book is interesting. It has many pictures.",
+        "instruction": "책의 특징을 고르세요.",
+        "options": ["A. 지루하다", "B. 재미있다", "C. 어렵다"],
+        "answer": "B"
+      },
+      {
+        "question": "The boy is playing in the park. He is running and jumping. He looks very happy.",
+        "instruction": "소년이 하고 있는 일을 고르세요.",
+        "options": ["A. 걷고 있다", "B. 놀고 있다", "C. 먹고 있다"],
+        "answer": "B"
+      },
+      {
+        "question": "The weather is sunny today. There are no clouds in the sky. It is very warm outside.",
+        "instruction": "오늘의 날씨를 고르세요.",
+        "options": ["A. 맑고 따뜻하다", "B. 흐리고 춥다", "C. 비가 온다"],
+        "answer": "A"
+      },
+      {
+        "question": "The bird is building a nest. It is collecting small sticks. The nest is in a tall tree.",
+        "instruction": "새가 하고 있는 일을 고르세요.",
+        "options": ["A. 먹이를 찾고 있다", "B. 둥지를 만들고 있다", "C. 날고 있다"],
+        "answer": "B"
+      },
+      {
+        "question": "The teacher is writing on the board. The students are listening. The classroom is very quiet.",
+        "instruction": "교실의 상태를 고르세요.",
+        "options": ["A. 시끄럽다", "B. 조용하다", "C. 어둡다"],
+        "answer": "B"
+      },
+      {
+        "question": "The sun is setting. The sky is orange and pink. It is a beautiful evening.",
+        "instruction": "지금의 시간대를 고르세요.",
+        "options": ["A. 아침", "B. 낮", "C. 저녁"],
+        "answer": "C"
+      },
+      {
+        "question": "The rabbit is eating a carrot. It is sitting under a tree. It looks very cute.",
+        "instruction": "토끼가 앉아 있는 곳을 고르세요.",
+        "options": ["A. 나무 아래", "B. 풀밭 위", "C. 연못 옆"],
+        "answer": "A"
+      },
+      {
+        "question": "The boy is holding a ball. He is about to throw it. His dog is waiting to catch it.",
+        "instruction": "개가 하고 있는 일을 고르세요.",
+        "options": ["A. 기다리고 있다", "B. 공을 던지고 있다", "C. 자고 있다"],
+        "answer": "A"
+      },
+      {
+        "question": "The cake is chocolate. It has a lot of cream. Everyone wants to eat it.",
+        "instruction": "케이크의 맛을 고르세요.",
+        "options": ["A. 바닐라", "B. 초콜릿", "C. 딸기"],
+        "answer": "B"
+      },
+      {
+        "question": "The cat is sitting by the window. It is watching the birds outside. The birds are flying around.",
+        "instruction": "고양이가 하고 있는 일을 고르세요.",
+        "options": ["A. 새를 보고 있다", "B. 뛰고 있다", "C. 자고 있다"],
+        "answer": "A"
+      },
+      {
+        "question": "The girl is painting a picture. She is using blue and green colors. Her picture is of the ocean.",
+        "instruction": "소녀가 그리고 있는 것을 고르세요.",
+        "options": ["A. 숲", "B. 바다", "C. 산"],
+        "answer": "B"
+      }
     ]
   }
 }
-    
+     
+  
   
 
