@@ -183,7 +183,131 @@
         "options": ["A. run", "B. runs", "C. running"],
         "answer": "A"
       }
+    ],
+    "2": [
+      {
+        "question": "He rides his bike every morning.",
+        "instruction": "그가 매일 아침 타는 것을 고르세요.",
+        "options": ["A. 자전거", "B. 자동차", "C. 버스"],
+        "answer": "A"
+      },
+      {
+        "question": "The baby likes to play with toys.",
+        "instruction": "아기가 좋아하는 것을 고르세요.",
+        "options": ["A. 장난감", "B. 책", "C. 음료수"],
+        "answer": "A"
+      },
+      {
+        "question": "We always ___ dinner at 6 PM.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. eats", "B. eating", "C. eat"],
+        "answer": "C"
+      },
+      {
+        "question": "The teacher is talking to the students.",
+        "instruction": "선생님이 하고 있는 일을 고르세요.",
+        "options": ["A. 뛰고 있다", "B. 말하고 있다", "C. 쓰고 있다"],
+        "answer": "B"
+      },
+      {
+        "question": "The boy is reading a storybook.",
+        "instruction": "소년이 읽고 있는 것을 고르세요.",
+        "options": ["A. 소설책", "B. 만화책", "C. 동화책"],
+        "answer": "C"
+      },
+      {
+        "question": "We ___ to the park on Sundays.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. goes", "B. going", "C. go"],
+        "answer": "C"
+      },
+      {
+        "question": "She is drawing a picture of a tree.",
+        "instruction": "그녀가 그리고 있는 것을 고르세요.",
+        "options": ["A. 동물", "B. 나무", "C. 집"],
+        "answer": "B"
+      },
+      {
+        "question": "Look at the clock. It shows 7 o'clock.",
+        "instruction": "시계가 가리키는 시간을 고르세요.",
+        "options": ["A. 6시", "B. 7시", "C. 8시"],
+        "answer": "B"
+      },
+      {
+        "question": "The apples on the table are red.",
+        "instruction": "탁자 위 사과의 색깔을 고르세요.",
+        "options": ["A. 녹색", "B. 빨간색", "C. 노란색"],
+        "answer": "B"
+      },
+      {
+        "question": "I ___ watching TV now.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. am", "B. is", "C. are"],
+        "answer": "A"
+      },
+      {
+        "question": "Look at the little cat. It is on a rug.",
+        "instruction": "다음 중 러그 위에 있는 것을 고르세요.",
+        "options": ["A. 강아지", "B. 고양이", "C. 모자"],
+        "answer": "B"
+      },
+      {
+        "question": "The house is big. It has a red roof.",
+        "instruction": "집의 지붕 색깔을 고르세요.",
+        "options": ["A. 파란색", "B. 빨간색", "C. 하얀색"],
+        "answer": "B"
+      },
+      {
+        "question": "Tom has a pet dog. It is very friendly.",
+        "instruction": "Tom의 애완동물을 고르세요.",
+        "options": ["A. 고양이", "B. 개", "C. 새"],
+        "answer": "B"
+      },
+      {
+        "question": "The cake is on the table. It looks delicious.",
+        "instruction": "탁자 위에 있는 것을 고르세요.",
+        "options": ["A. 케이크", "B. 사과", "C. 물"],
+        "answer": "A"
+      },
+      {
+        "question": "I see a bird. It is flying in the sky.",
+        "instruction": "새가 있는 곳을 고르세요.",
+        "options": ["A. 나무 위", "B. 하늘", "C. 강"],
+        "answer": "B"
+      },
+      {
+        "question": "The boy has a book. He is reading it now.",
+        "instruction": "소년이 하고 있는 일을 고르세요.",
+        "options": ["A. 쓰고 있다", "B. 읽고 있다", "C. 노래하고 있다"],
+        "answer": "B"
+      },
+      {
+        "question": "The flowers are pink. They smell nice.",
+        "instruction": "꽃의 색깔을 고르세요.",
+        "options": ["A. 빨간색", "B. 분홍색", "C. 노란색"],
+        "answer": "B"
+      },
+      {
+        "question": "The box is big. It is full of toys.",
+        "instruction": "상자 안에 들어있는 것을 고르세요.",
+        "options": ["A. 책", "B. 옷", "C. 장난감"],
+        "answer": "C"
+      },
+      {
+        "question": "The sun is shining. It is a warm day.",
+        "instruction": "오늘의 날씨를 고르세요.",
+        "options": ["A. 따뜻하다", "B. 춥다", "C. 비가 온다"],
+        "answer": "A"
+      },
+      {
+        "question": "The dog is outside. It is barking loudly.",
+        "instruction": "개가 어디에 있는지 고르세요.",
+        "options": ["A. 집 안", "B. 밖", "C. 공원"],
+        "answer": "B"
+      }
     ]
   }
 }
+    
+  
 
