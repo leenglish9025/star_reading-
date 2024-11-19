@@ -4,105 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>스타리딩 테스트</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f8f9fa;
-        }
-
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            padding: 15px;
-            background-color: #007bff;
-            color: white;
-            font-size: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        #progress {
-            position: absolute;
-            top: 10px;
-            left: 15px;
-            font-size: 16px;
-            color: white;
-        }
-
-        main {
-            margin-top: 80px; /* 헤더 높이만큼 여백 추가 */
-            padding: 20px;
-            max-width: 600px;
-            margin-left: auto;
-            margin-right: auto;
-            background-color: white;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
-
-        .question {
-            font-size: 18px;
-            margin-bottom: 10px;
-            font-weight: bold;
-        }
-
-        .instruction {
-            font-size: 14px;
-            color: gray;
-            margin-bottom: 20px;
-        }
-
-        .options {
-            list-style-type: none;
-            padding: 0;
-        }
-
-        .options li {
-            margin-bottom: 10px;
-        }
-
-        .options input {
-            margin-right: 10px;
-        }
-
-        #timer {
-            color: red;
-            font-weight: bold;
-            margin-bottom: 15px;
-        }
-
-        #confirm-button {
-            margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-            display: block;
-            width: 100%;
-            text-align: center;
-        }
-
-        #confirm-button:hover {
-            background-color: #0056b3;
-        }
-
-        button:disabled {
-            background-color: #ccc;
-            cursor: not-allowed;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <div id="progress">문제: 0 / 35</div>
-        <h1 style="text-align: center; margin: 0;">스타리딩 테스트</h1>
+        <h1>스타리딩 테스트</h1>
     </header>
     <main>
         <div id="question-container"></div>
@@ -123,8 +30,7 @@
             try {
                 const response = await fetch('problems.json');
                 const data = await response.json();
-                problems = data.levels[currentLevel].slice(0, getProblemCountForLevel(currentLevel));
-                shuffle(problems);
+                problems = generateQuestions(data.levels);
                 loadQuestion();
             } catch (error) {
                 alert('문제를 불러오는 데 실패했습니다.');
@@ -132,15 +38,33 @@
             }
         }
 
-        // 문제 섞기
+        // 문제 섞기 및 총 35문제로 제한
+        function generateQuestions(levels) {
+            const selectedQuestions = [];
+            let questionsNeeded = totalQuestions;
+
+            for (let level = 0; level <= Object.keys(levels).length; level++) {
+                if (questionsNeeded <= 0) break;
+
+                const levelQuestions = levels[level];
+                const questionsForLevel = shuffle(levelQuestions).slice(0, Math.min(questionsNeeded, getProblemCountForLevel(level)));
+
+                selectedQuestions.push(...questionsForLevel);
+                questionsNeeded -= questionsForLevel.length;
+            }
+            return selectedQuestions;
+        }
+
+        // 문제 섞기 함수
         function shuffle(array) {
             for (let i = array.length - 1; i > 0; i--) {
                 const j = Math.floor(Math.random() * (i + 1));
                 [array[i], array[j]] = [array[j], array[i]];
             }
+            return array;
         }
 
-        // 레벨별 문제 수 결정
+        // 레벨별 문제 수
         function getProblemCountForLevel(level) {
             if (level < 10) return 10;
             if (level < 13) return 5;
@@ -149,22 +73,24 @@
 
         // 문제 로드
         function loadQuestion() {
-            if (currentIndex < problems.length) {
+            if (currentIndex < problems.length && currentQuestionNumber < totalQuestions) {
                 const questionContainer = document.getElementById("question-container");
                 const problem = problems[currentIndex];
+
                 questionContainer.innerHTML = `
                     <div class="question">${problem.question}</div>
                     <div class="instruction">${problem.instruction}</div>
                     <ul class="options">
-                        ${problem.options.map((option, index) => `
+                        ${problem.options.map(option => `
                             <li>
                                 <label>
-                                    <input type="radio" name="option" value="${option[0]}" onclick="enableConfirmButton()"> ${option}
+                                    <input type="radio" name="option" value="${option}" onclick="enableConfirmButton()"> ${option}
                                 </label>
                             </li>
                         `).join('')}
                     </ul>
                 `;
+
                 updateProgress();
                 startTimer(getTimeLimitForLevel(currentLevel), () => {
                     alert("시간을 초과했습니다!");
@@ -181,29 +107,37 @@
             document.getElementById("confirm-button").disabled = false;
         }
 
-        // 확인 버튼 클릭 시 동작
+        // 확인 버튼 클릭 시
         document.getElementById("confirm-button").addEventListener("click", () => {
             const selectedOption = document.querySelector('input[name="option"]:checked');
+
             if (selectedOption) {
                 const userAnswer = selectedOption.value;
                 if (userAnswer === problems[currentIndex].answer) {
                     correctAnswers++;
                 }
             }
-            document.getElementById("confirm-button").disabled = true;
+
+            currentQuestionNumber++;
             currentIndex++;
-            loadQuestion();
+            document.getElementById("confirm-button").disabled = true;
+
+            if (currentQuestionNumber >= totalQuestions) {
+                showResults();
+            } else {
+                loadQuestion();
+            }
         });
 
         // 진행 상황 업데이트
         function updateProgress() {
-            currentQuestionNumber++;
-            document.getElementById("progress").innerText = `문제: ${currentQuestionNumber} / ${totalQuestions}`;
+            document.getElementById("progress").innerText = `문제: ${currentQuestionNumber + 1} / ${totalQuestions}`;
         }
 
         // 시간 제한 설정
         function startTimer(timeLimit, onTimeout) {
             clearInterval(timerInterval);
+
             let timeLeft = timeLimit;
             const timerDisplay = document.getElementById("timer");
             timerDisplay.innerText = `남은 시간: ${timeLeft}초`;
@@ -230,28 +164,25 @@
             return 120;
         }
 
-        // 레벨 통과 확인
+        // 레벨 진행 확인
         function checkLevelProgress() {
-            const successRate = (correctAnswers / problems.length) * 100;
-            if (successRate >= 70) {
-                if (currentLevel < 13) {
-                    alert(`레벨 ${currentLevel}을 통과하셨습니다!`);
-                    currentLevel++;
-                    currentIndex = 0;
-                    correctAnswers = 0;
-                    loadProblems();
-                } else {
-                    showResults();
-                }
+            const successRate = (correctAnswers / (currentIndex + 1)) * 100;
+
+            if (successRate >= 70 && currentLevel < 13) {
+                alert(`레벨 ${currentLevel}을 통과했습니다!`);
+                currentLevel++;
+                currentIndex = 0;
+                correctAnswers = 0;
+                loadProblems();
             } else {
                 showResults();
             }
         }
 
-        // 성적표 표시
+        // 결과 표시
         function showResults() {
-            alert(`테스트가 종료되었습니다. 당신의 최종 레벨: ${currentLevel}`);
-            // 성적표 페이지로 이동 또는 결과 표시
+            localStorage.setItem("finalResults", JSON.stringify({ level: currentLevel, score: correctAnswers }));
+            window.location.href = "results.html";
         }
 
         // 초기화
