@@ -10,57 +10,68 @@
             margin: 0;
             padding: 0;
             background-color: #f8f9fa;
-            color: #333;
         }
 
         header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
             background-color: #007bff;
-            color: #fff;
-            padding: 15px 20px;
-            text-align: center;
+            color: white;
+            font-size: 20px;
         }
 
-        header h1 {
-            margin: 0;
-            font-size: 24px;
+        #progress {
+            position: fixed;
+            top: 10px;
+            left: 10px;
+            font-size: 16px;
+            color: white;
         }
 
         main {
+            margin: 60px auto 20px auto;
             max-width: 600px;
-            margin: 20px auto;
             padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
             border-radius: 8px;
         }
 
         .question {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .instruction {
+            font-size: 14px;
+            color: gray;
             margin-bottom: 20px;
         }
 
         .options {
             list-style-type: none;
             padding: 0;
-            margin: 0;
         }
 
         .options li {
             margin: 10px 0;
         }
 
-        .options input[type="radio"] {
+        .options input {
             margin-right: 10px;
         }
 
         button {
-            display: block;
-            width: 100%;
-            padding: 10px 15px;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
             background-color: #007bff;
-            color: #fff;
+            color: white;
             border: none;
             border-radius: 4px;
-            font-size: 16px;
             cursor: pointer;
         }
 
@@ -68,68 +79,39 @@
             background-color: #0056b3;
         }
 
-        .hidden {
+        #results {
             display: none;
-        }
-
-        footer {
-            text-align: center;
-            margin: 20px 0;
-            font-size: 12px;
-            color: #777;
-        }
-
-        @media (max-width: 480px) {
-            header h1 {
-                font-size: 20px;
-            }
-
-            main {
-                margin: 10px;
-                padding: 15px;
-            }
-
-            button {
-                font-size: 14px;
-            }
         }
     </style>
 </head>
 <body>
     <header>
+        <div id="progress">문제: 0 / 35</div>
         <h1>스타리딩 테스트</h1>
     </header>
     <main>
-        <div id="test-container">
-            <div id="question-container"></div>
-            <button id="next-button" onclick="nextQuestion()">다음 문제</button>
-        </div>
-        <div id="feedback" class="hidden">
-            <h2>테스트 종료</h2>
-            <p id="level-scores"></p>
-        </div>
+        <div id="question-container"></div>
+        <button id="next-button" style="display:none;">다음 문제</button>
+        <div id="results"></div>
     </main>
-    <footer>
-        &copy; 2024 스타리딩 테스트
-    </footer>
     <script>
-        let problemsByLevel = {};
-        let allQuestions = [];
-        let currentQuestionIndex = 0;
-        const userAnswers = [];
+        let currentQuestionNumber = 0;
+        const totalQuestions = 35; // 최대 문제 수
+        let currentLevel = 0;
+        let currentIndex = 0;
+        let correctAnswers = 0;
+        let problems = [];
 
         // JSON 파일 로드
         async function loadProblems() {
             try {
-                const response = await fetch('problems.json'); // JSON 파일 경로
-                if (!response.ok) {
-                    throw new Error('문제 데이터를 불러오는 데 실패했습니다.');
-                }
-                problemsByLevel = await response.json();
-                prepareQuestions();
+                const response = await fetch('problems.json');
+                const data = await response.json();
+                problems = data[currentLevel].slice(0, getProblemCountForLevel(currentLevel));
+                shuffle(problems);
+                loadQuestion();
             } catch (error) {
-                console.error(error);
-                alert('문제를 불러오는 중 오류가 발생했습니다.');
+                alert('문제를 불러오는 데 실패했습니다.');
             }
         }
 
@@ -141,94 +123,113 @@
             }
         }
 
-        // 문제 준비
-        function prepareQuestions() {
-            for (const level in problemsByLevel.levels) {
-                const levelQuestions = problemsByLevel.levels[level].map(q => ({ ...q, level }));
-                allQuestions = allQuestions.concat(levelQuestions);
-            }
-            shuffle(allQuestions);
-            loadQuestion();
+        // 레벨별 문제 수 결정
+        function getProblemCountForLevel(level) {
+            if (level < 10) return 10;
+            if (level < 13) return 5;
+            return 3;
         }
 
         // 문제 로드
         function loadQuestion() {
-            const questionContainer = document.getElementById("question-container");
-            questionContainer.innerHTML = "";
-
-            if (currentQuestionIndex < allQuestions.length) {
-                const problem = allQuestions[currentQuestionIndex];
-                const questionDiv = document.createElement("div");
-                questionDiv.className = "question";
-                questionDiv.innerHTML = `
-                    <p>${problem.question}</p>
-                    <p style="color: gray; font-size: 0.9em; margin-top: 5px;">${problem.instruction}</p>
+            if (currentIndex < problems.length) {
+                const questionContainer = document.getElementById("question-container");
+                const problem = problems[currentIndex];
+                questionContainer.innerHTML = `
+                    <div class="question">${problem.question}</div>
+                    <div class="instruction">${problem.instruction}</div>
+                    <ul class="options">
+                        ${problem.options.map((option, index) => `
+                            <li>
+                                <label>
+                                    <input type="radio" name="option" value="${option[0]}"> ${option}
+                                </label>
+                            </li>
+                        `).join('')}
+                    </ul>
                 `;
-
-                const optionsList = document.createElement("ul");
-                optionsList.className = "options";
-                problem.options.forEach(option => {
-                    const li = document.createElement("li");
-                    const label = document.createElement("label");
-                    const radio = document.createElement("input");
-                    radio.type = "radio";
-                    radio.name = "option";
-                    radio.value = option;
-                    label.appendChild(radio);
-                    label.appendChild(document.createTextNode(option));
-                    li.appendChild(label);
-                    optionsList.appendChild(li);
+                updateProgress();
+                startTimer(getTimeLimitForLevel(currentLevel), () => {
+                    alert("시간을 초과했습니다!");
+                    currentIndex++;
+                    loadQuestion();
                 });
-                questionDiv.appendChild(optionsList);
-                questionContainer.appendChild(questionDiv);
             } else {
-                endTest();
+                checkLevelProgress();
             }
         }
 
-        // 다음 문제
-        function nextQuestion() {
-            const selectedOption = document.querySelector('input[name="option"]:checked');
-            if (!selectedOption) {
-                alert("옵션을 선택해주세요.");
-                return;
-            }
-            const userAnswer = selectedOption.value;
-            const problem = allQuestions[currentQuestionIndex];
-            userAnswers.push({ question: problem.question, correct: problem.answer === userAnswer });
-            currentQuestionIndex += 1;
-            loadQuestion();
+        // 진행 상황 업데이트
+        function updateProgress() {
+            currentQuestionNumber++;
+            document.getElementById("progress").innerText = `문제: ${currentQuestionNumber} / ${totalQuestions}`;
         }
 
-        // 테스트 종료
-        function endTest() {
-            document.getElementById("test-container").classList.add("hidden");
-            const feedback = document.getElementById("feedback");
-            feedback.classList.remove("hidden");
-
-            const scores = {};
-            for (const level in problemsByLevel.levels) {
-                scores[level] = 0;
-            }
-
-            userAnswers.forEach((answer, index) => {
-                const level = allQuestions[index].level;
-                if (answer.correct) {
-                    scores[level] += 1;
+        // 시간 제한 설정
+        function startTimer(timeLimit, onTimeout) {
+            let timeLeft = timeLimit;
+            const timer = setInterval(() => {
+                timeLeft--;
+                if (timeLeft <= 0) {
+                    clearInterval(timer);
+                    onTimeout();
                 }
-            });
-
-            let scoresText = "<strong>분야별 점수</strong><br>";
-            for (const level in scores) {
-                scoresText += `레벨 ${level}: ${scores[level]} / ${problemsByLevel.levels[level].length}<br>`;
-            }
-            document.getElementById("level-scores").innerHTML = scoresText;
+            }, 1000);
         }
 
-        // 초기 로드
-        document.addEventListener("DOMContentLoaded", loadProblems);
+        // 시간 제한 가져오기
+        function getTimeLimitForLevel(level) {
+            if (level < 1) return 10;
+            if (level < 2) return 15;
+            if (level < 3) return 20;
+            if (level < 5) return 30;
+            if (level < 11) return 90;
+            return 120;
+        }
+
+        // 레벨 통과 확인
+        function checkLevelProgress() {
+            const successRate = (correctAnswers / problems.length) * 100;
+            if (successRate >= 70) {
+                if (currentLevel < 13) {
+                    currentLevel++;
+                    currentIndex = 0;
+                    correctAnswers = 0;
+                    loadProblems();
+                } else {
+                    showResults();
+                }
+            } else {
+                showResults();
+            }
+        }
+
+        // 성적표 표시
+        function showResults() {
+    // 성적 데이터를 localStorage에 저장
+    const results = {
+        finalLevel: currentLevel,
+        scoreData: [
+            { area: "Vocabulary", correct: 12, score: 60, percentage: "100%" },
+            { area: "Grammar", correct: 4, score: 20, percentage: "100%" },
+            { area: "Reading", correct: 4, score: 20, percentage: "100%" }
+        ]
+    };
+    localStorage.setItem("results", JSON.stringify(results));
+
+    // 성적표 페이지로 이동
+    window.location.href = "results.html";
+}
+
+        }
+
+        // 초기화
+        document.addEventListener("DOMContentLoaded", () => {
+            loadProblems();
+        });
     </script>
 </body>
 </html>
+
 
 
