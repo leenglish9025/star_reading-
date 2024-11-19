@@ -427,10 +427,1359 @@
         "options": ["A. 숲", "B. 바다", "C. 산"],
         "answer": "B"
       }
+    ],
+    "4": [
+      {
+        "question": "She went to the library yesterday to borrow some books.",
+        "instruction": "그녀가 어제 간 곳을 고르세요.",
+        "options": ["A. 서점", "B. 도서관", "C. 학교"],
+        "answer": "B"
+      },
+      {
+        "question": "The children were playing in the playground after school.",
+        "instruction": "아이들이 방과 후에 있었던 장소를 고르세요.",
+        "options": ["A. 운동장", "B. 교실", "C. 집"],
+        "answer": "A"
+      },
+      {
+        "question": "The train ___ the station five minutes ago.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. leaves", "B. left", "C. leaving"],
+        "answer": "B"
+      },
+      {
+        "question": "She enjoys singing songs and playing the guitar.",
+        "instruction": "그녀가 즐기는 활동을 고르세요.",
+        "options": ["A. 춤추기", "B. 노래 부르기와 기타 연주", "C. 그림 그리기"],
+        "answer": "B"
+      },
+      {
+        "question": "They are planning to visit their grandparents this weekend.",
+        "instruction": "그들이 이번 주말에 방문하려는 사람들을 고르세요.",
+        "options": ["A. 친구들", "B. 조부모님", "C. 선생님"],
+        "answer": "B"
+      },
+      {
+        "question": "He has been living in this city for ten years.",
+        "instruction": "그가 이 도시에서 산 기간을 고르세요.",
+        "options": ["A. 5년", "B. 10년", "C. 15년"],
+        "answer": "B"
+      },
+      {
+        "question": "We should ___ our homework before going outside to play.",
+        "instruction": "빈칸에 들어갈 단어를 고르세요.",
+        "options": ["A. finish", "B. finished", "C. finishing"],
+        "answer": "A"
+      },
+      {
+        "question": "He is wearing a blue shirt and black pants today.",
+        "instruction": "그가 오늘 입은 옷의 색깔을 고르세요.",
+        "options": ["A. 파란 셔츠와 검은 바지", "B. 하얀 셔츠와 파란 바지", "C. 검은 셔츠와 하얀 바지"],
+        "answer": "A"
+      },
+      {
+        "question": "I usually wake up at 7 AM, but today I woke up at 6 AM.",
+        "instruction": "오늘 내가 일어난 시간을 고르세요.",
+        "options": ["A. 6시", "B. 7시", "C. 8시"],
+        "answer": "A"
+      },
+      {
+        "question": "The bird built a nest on the tall tree near our house.",
+        "instruction": "새가 둥지를 지은 장소를 고르세요.",
+        "options": ["A. 낮은 나무", "B. 높은 나무", "C. 집 안"],
+        "answer": "B"
+      },
+      {
+        "question": "The dog was barking loudly, so I went outside to see what was happening.",
+        "instruction": "내가 밖으로 나간 이유를 고르세요.",
+        "options": ["A. 개가 조용히 있었다", "B. 개가 크게 짖고 있었다", "C. 개가 달리고 있었다"],
+        "answer": "B"
+      },
+      {
+        "question": "She bought some fresh fruits from the market, including apples and bananas.",
+        "instruction": "그녀가 시장에서 산 것을 고르세요.",
+        "options": ["A. 채소", "B. 과일", "C. 생선"],
+        "answer": "B"
+      },
+      {
+        "question": "He found a wallet on the street and gave it to the police.",
+        "instruction": "그가 거리에서 발견한 것을 고르세요.",
+        "options": ["A. 지갑", "B. 열쇠", "C. 핸드폰"],
+        "answer": "A"
+      },
+      {
+        "question": "The movie was very long, but it was also interesting and exciting.",
+        "instruction": "영화의 느낌을 고르세요.",
+        "options": ["A. 지루하다", "B. 길지만 흥미롭다", "C. 무섭다"],
+        "answer": "B"
+      },
+      {
+        "question": "The students are writing essays about their favorite hobbies.",
+        "instruction": "학생들이 작성 중인 내용을 고르세요.",
+        "options": ["A. 좋아하는 음식", "B. 좋아하는 취미", "C. 좋아하는 동물"],
+        "answer": "B"
+      },
+      {
+        "question": "He cleaned the kitchen, washed the dishes, and took out the trash.",
+        "instruction": "그가 한 일을 고르세요.",
+        "options": ["A. 요리했다", "B. 청소하고 설거지했다", "C. 텔레비전을 봤다"],
+        "answer": "B"
+      },
+      {
+        "question": "The baby is crying because it is hungry.",
+        "instruction": "아기가 우는 이유를 고르세요.",
+        "options": ["A. 졸리다", "B. 배고프다", "C. 아프다"],
+        "answer": "B"
+      },
+      {
+        "question": "She enjoys cooking new dishes and sharing them with her friends.",
+        "instruction": "그녀가 즐겨 하는 활동을 고르세요.",
+        "options": ["A. 요리하기", "B. 그림 그리기", "C. 음악 듣기"],
+        "answer": "A"
+      },
+      {
+        "question": "The weather was cold yesterday, but today it is warm and sunny.",
+        "instruction": "오늘의 날씨를 고르세요.",
+        "options": ["A. 춥고 흐리다", "B. 따뜻하고 맑다", "C. 비가 온다"],
+        "answer": "B"
+      },
+      {
+        "question": "He is looking for his keys, but he cannot find them anywhere.",
+        "instruction": "그가 찾고 있는 것을 고르세요.",
+        "options": ["A. 지갑", "B. 열쇠", "C. 핸드폰"],
+        "answer": "B"
+      }
+    ],
+    "5": [
+      {
+        "question": "He is much stronger than his younger brother.",
+        "instruction": "그가 형제와 비교하여 어떤 상태인지 고르세요.",
+        "options": ["A. 더 약하다", "B. 더 강하다", "C. 더 작다"],
+        "answer": "B"
+      },
+      {
+        "question": "The book on the table belongs to Sarah.",
+        "instruction": "탁자 위의 책의 주인을 고르세요.",
+        "options": ["A. John", "B. Sarah", "C. Michael"],
+        "answer": "B"
+      },
+      {
+        "question": "She will finish her project by next Friday.",
+        "instruction": "그녀가 프로젝트를 끝낼 예상 날짜를 고르세요.",
+        "options": ["A. 이번 주 금요일", "B. 다음 주 금요일", "C. 어제"],
+        "answer": "B"
+      },
+      {
+        "question": "The teacher asked the students to submit their homework before the deadline.",
+        "instruction": "선생님이 학생들에게 요청한 것을 고르세요.",
+        "options": ["A. 숙제를 기한 전에 제출하기", "B. 수업에 늦지 않기", "C. 시험 준비하기"],
+        "answer": "A"
+      },
+      {
+        "question": "The boy ran faster than anyone else in the race.",
+        "instruction": "소년이 한 행동을 고르세요.",
+        "options": ["A. 가장 빨리 달렸다", "B. 가장 천천히 달렸다", "C. 중간 속도로 달렸다"],
+        "answer": "A"
+      },
+      {
+        "question": "They were waiting for the bus when it started to rain heavily.",
+        "instruction": "비가 오기 전 그들이 하고 있었던 일을 고르세요.",
+        "options": ["A. 버스를 기다렸다", "B. 쇼핑했다", "C. 집으로 걸어갔다"],
+        "answer": "A"
+      },
+      {
+        "question": "I have visited Paris twice, and I really want to go there again.",
+        "instruction": "화자가 몇 번 파리를 방문했는지 고르세요.",
+        "options": ["A. 한 번", "B. 두 번", "C. 세 번"],
+        "answer": "B"
+      },
+      {
+        "question": "The little girl was crying because she lost her favorite toy.",
+        "instruction": "소녀가 운 이유를 고르세요.",
+        "options": ["A. 장난감을 잃어버려서", "B. 배가 고파서", "C. 넘어져서"],
+        "answer": "A"
+      },
+      {
+        "question": "He has been working in the same company for over ten years.",
+        "instruction": "그가 회사에서 근무한 기간을 고르세요.",
+        "options": ["A. 5년", "B. 10년 이상", "C. 3년"],
+        "answer": "B"
+      },
+      {
+        "question": "The city is larger and more crowded than the town where I grew up.",
+        "instruction": "그 도시의 특징을 고르세요.",
+        "options": ["A. 작고 조용하다", "B. 크고 붐빈다", "C. 작고 붐빈다"],
+        "answer": "B"
+      },
+      {
+        "question": "Tom woke up early this morning. He had breakfast and then went for a jog. After jogging, he took a shower and prepared for work.",
+        "instruction": "Tom이 조깅 후에 한 일을 고르세요.",
+        "options": ["A. 아침을 먹었다", "B. 샤워를 했다", "C. 잠을 잤다"],
+        "answer": "B"
+      },
+      {
+        "question": "She is very good at playing the piano. She practices every day for two hours. Last month, she performed at a school concert and received a big round of applause.",
+        "instruction": "그녀가 한 활동을 고르세요.",
+        "options": ["A. 기타를 연주했다", "B. 피아노를 연주했다", "C. 춤을 췄다"],
+        "answer": "B"
+      },
+      {
+        "question": "The restaurant was full of people. They were talking and laughing. The food smelled delicious, and the waiters were very busy serving the customers.",
+        "instruction": "식당의 분위기를 고르세요.",
+        "options": ["A. 조용하다", "B. 붐빈다", "C. 어둡다"],
+        "answer": "B"
+      },
+      {
+        "question": "Last summer, we went to the beach. The weather was sunny and warm. We swam in the ocean, built sandcastles, and had a picnic by the water.",
+        "instruction": "화자가 여름에 한 일을 고르세요.",
+        "options": ["A. 산을 올랐다", "B. 해변에서 놀았다", "C. 집에 머물렀다"],
+        "answer": "B"
+      },
+      {
+        "question": "There is a beautiful garden behind the house. It has many colorful flowers and a small fountain. Birds often come to drink water from the fountain.",
+        "instruction": "새들이 하는 행동을 고르세요.",
+        "options": ["A. 노래한다", "B. 물을 마신다", "C. 둥지를 짓는다"],
+        "answer": "B"
+      },
+      {
+        "question": "The train was delayed due to heavy snow. Passengers were waiting on the platform, checking their watches, and looking annoyed.",
+        "instruction": "기차가 늦어진 이유를 고르세요.",
+        "options": ["A. 눈 때문에", "B. 비 때문에", "C. 태풍 때문에"],
+        "answer": "A"
+      },
+      {
+        "question": "The museum was quiet and peaceful. Visitors were looking at the paintings, and some were taking notes. A guide was explaining the history of the art pieces.",
+        "instruction": "박물관에서 가이드가 한 일을 고르세요.",
+        "options": ["A. 그림을 그렸다", "B. 작품의 역사를 설명했다", "C. 사진을 찍었다"],
+        "answer": "B"
+      },
+      {
+        "question": "The mountain trail was steep and challenging. We climbed for hours and finally reached the top. The view was amazing, and we took many pictures.",
+        "instruction": "산 정상에서 화자가 한 일을 고르세요.",
+        "options": ["A. 사진을 찍었다", "B. 뛰어 내려갔다", "C. 텐트를 쳤다"],
+        "answer": "A"
+      },
+      {
+        "question": "My mother made a delicious cake for my birthday. It was a chocolate cake with strawberries on top. Everyone loved it, and we finished it in no time.",
+        "instruction": "케이크 위에 올려진 것을 고르세요.",
+        "options": ["A. 체리", "B. 딸기", "C. 블루베리"],
+        "answer": "B"
+      },
+      {
+        "question": "The new park has a playground, a pond, and a walking path. Families go there to relax, children play on the swings, and ducks swim in the pond.",
+        "instruction": "연못에서 하고 있는 일을 고르세요.",
+        "options": ["A. 사람들이 걷고 있다", "B. 오리가 헤엄치고 있다", "C. 아이들이 놀고 있다"],
+        "answer": "B"
+      }
+    ],
+    "6": [
+      {
+        "question": "She has been working on the same project for three months without taking a break.",
+        "instruction": "그녀가 몇 달 동안 같은 프로젝트를 작업했는지 고르세요.",
+        "options": ["A. 한 달", "B. 두 달", "C. 세 달"],
+        "answer": "C"
+      },
+      {
+        "question": "If you don't water the plants regularly, they will wither and die.",
+        "instruction": "식물이 죽는 이유를 고르세요.",
+        "options": ["A. 물을 너무 많이 줘서", "B. 물을 규칙적으로 주지 않아서", "C. 햇빛을 많이 받아서"],
+        "answer": "B"
+      },
+      {
+        "question": "The conference starts at 10 AM sharp, so please ensure you arrive on time.",
+        "instruction": "회의가 시작하는 시간을 고르세요.",
+        "options": ["A. 9시", "B. 10시", "C. 11시"],
+        "answer": "B"
+      },
+      {
+        "question": "He would have finished his homework earlier if he had started it right after school.",
+        "instruction": "그가 숙제를 더 빨리 끝낼 수 있었던 이유를 고르세요.",
+        "options": ["A. 학교 후 바로 시작했다면", "B. 숙제를 하지 않았다면", "C. 친구와 놀았다면"],
+        "answer": "A"
+      },
+      {
+        "question": "The scientists discovered a new species of fish that lives in the deep ocean.",
+        "instruction": "과학자들이 발견한 새로운 물고기가 사는 장소를 고르세요.",
+        "options": ["A. 얕은 강", "B. 깊은 바다", "C. 호수"],
+        "answer": "B"
+      },
+      {
+        "question": "He has never traveled abroad, but he dreams of visiting Europe someday.",
+        "instruction": "그가 방문하고 싶은 곳을 고르세요.",
+        "options": ["A. 아시아", "B. 유럽", "C. 남미"],
+        "answer": "B"
+      },
+      {
+        "question": "The book, which was written by a famous author, became a bestseller within a week.",
+        "instruction": "책이 베스트셀러가 된 기간을 고르세요.",
+        "options": ["A. 한 달 안에", "B. 일주일 안에", "C. 1년 안에"],
+        "answer": "B"
+      },
+      {
+        "question": "Although he was tired, he continued to work on the presentation until midnight.",
+        "instruction": "그가 프레젠테이션 작업을 멈추지 않은 이유를 고르세요.",
+        "options": ["A. 피곤하지 않아서", "B. 일을 끝내기 위해서", "C. 동료와 이야기해서"],
+        "answer": "B"
+      },
+      {
+        "question": "The forest was so dense that very little sunlight could reach the ground.",
+        "instruction": "숲의 특징을 고르세요.",
+        "options": ["A. 햇빛이 잘 들어온다", "B. 숲이 울창하다", "C. 나무가 드물다"],
+        "answer": "B"
+      },
+      {
+        "question": "She managed to complete the marathon despite having an injured ankle.",
+        "instruction": "그녀가 마라톤을 완주할 때의 상태를 고르세요.",
+        "options": ["A. 발목을 다친 상태", "B. 건강한 상태", "C. 기분이 좋은 상태"],
+        "answer": "A"
+      },
+      {
+        "question": "After reading the article about climate change, he decided to reduce his carbon footprint by using public transportation more often.",
+        "instruction": "그가 더 자주 사용하기로 결심한 것을 고르세요.",
+        "options": ["A. 자동차", "B. 대중교통", "C. 비행기"],
+        "answer": "B"
+      },
+      {
+        "question": "The team worked tirelessly for weeks, and their hard work paid off when they won the championship.",
+        "instruction": "팀이 얻은 결과를 고르세요.",
+        "options": ["A. 우승했다", "B. 패배했다", "C. 무승부였다"],
+        "answer": "A"
+      },
+      {
+        "question": "Despite the storm, the fishermen went out to sea to catch fish, as it was their only source of income.",
+        "instruction": "어부들이 바다로 나간 이유를 고르세요.",
+        "options": ["A. 생계를 위해서", "B. 놀이를 위해서", "C. 날씨가 좋아서"],
+        "answer": "A"
+      },
+      {
+        "question": "The museum was filled with rare artifacts, some of which were thousands of years old.",
+        "instruction": "박물관에 전시된 물건의 나이를 고르세요.",
+        "options": ["A. 몇 년", "B. 수천 년", "C. 백 년"],
+        "answer": "B"
+      },
+      {
+        "question": "She was reluctant to speak in front of the class, but her teacher encouraged her to share her thoughts.",
+        "instruction": "선생님이 그녀에게 한 행동을 고르세요.",
+        "options": ["A. 격려했다", "B. 꾸짖었다", "C. 무시했다"],
+        "answer": "A"
+      },
+      {
+        "question": "The new smartphone is equipped with advanced features, such as facial recognition and a high-resolution camera.",
+        "instruction": "스마트폰의 특징을 고르세요.",
+        "options": ["A. 기본 기능만 있다", "B. 고급 기능이 있다", "C. 저렴한 카메라를 사용한다"],
+        "answer": "B"
+      },
+      {
+        "question": "The little boy was fascinated by the magician's tricks, especially when he made a rabbit disappear.",
+        "instruction": "소년이 놀란 이유를 고르세요.",
+        "options": ["A. 토끼가 사라지는 마술", "B. 공을 던지는 마술", "C. 카드 마술"],
+        "answer": "A"
+      },
+      {
+        "question": "The scientist spent years conducting experiments to find a cure for the disease.",
+        "instruction": "과학자가 한 일을 고르세요.",
+        "options": ["A. 치료법을 찾기 위한 실험", "B. 새로운 약 개발", "C. 강의를 진행"],
+        "answer": "A"
+      },
+      {
+        "question": "The chef prepared a five-course meal that included soup, salad, fish, meat, and dessert.",
+        "instruction": "요리사가 만든 것에 포함되지 않은 것을 고르세요.",
+        "options": ["A. 고기", "B. 과일", "C. 디저트"],
+        "answer": "B"
+      },
+      {
+        "question": "The documentary explained how deforestation affects the environment and what can be done to prevent it.",
+        "instruction": "다큐멘터리가 다룬 주제를 고르세요.",
+        "options": ["A. 삼림 벌채의 영향", "B. 동물들의 생활", "C. 기후 변화의 원인"],
+        "answer": "A"
+      }
+    ],
+    "7": [
+      {
+        "question": "The company has announced a new policy to reduce carbon emissions by 50% by the year 2030.",
+        "instruction": "회사의 새로운 정책 목표를 고르세요.",
+        "options": ["A. 탄소 배출 50% 감소", "B. 매출 50% 증가", "C. 에너지 소비 50% 증가"],
+        "answer": "A"
+      },
+      {
+        "question": "If I had studied harder, I might have passed the exam with flying colors.",
+        "instruction": "화자가 시험에서 좋은 점수를 얻지 못한 이유를 고르세요.",
+        "options": ["A. 열심히 공부하지 않아서", "B. 시험이 너무 어려워서", "C. 시간을 잘못 계산해서"],
+        "answer": "A"
+      },
+      {
+        "question": "The team members, who had been working tirelessly for months, finally completed the project.",
+        "instruction": "팀원들이 작업한 기간을 고르세요.",
+        "options": ["A. 며칠", "B. 몇 주", "C. 몇 달"],
+        "answer": "C"
+      },
+      {
+        "question": "Having been warned about the storm, the villagers evacuated their homes and moved to safer areas.",
+        "instruction": "마을 사람들이 한 행동을 고르세요.",
+        "options": ["A. 집에 머물렀다", "B. 안전한 곳으로 대피했다", "C. 바람에 대비했다"],
+        "answer": "B"
+      },
+      {
+        "question": "The book, which is considered a masterpiece, has been translated into more than 50 languages.",
+        "instruction": "책에 대한 특징을 고르세요.",
+        "options": ["A. 50개 이상의 언어로 번역되었다", "B. 잘 알려지지 않았다", "C. 학생들을 위한 교재다"],
+        "answer": "A"
+      },
+      {
+        "question": "Despite the initial challenges, the researchers succeeded in developing a vaccine within a year.",
+        "instruction": "연구자들이 직면했던 상황을 고르세요.",
+        "options": ["A. 도전 과제가 있었다", "B. 쉬운 과제가 있었다", "C. 아무 문제도 없었다"],
+        "answer": "A"
+      },
+      {
+        "question": "The conference, which was attended by leading experts, focused on the impacts of artificial intelligence on society.",
+        "instruction": "회의의 주제를 고르세요.",
+        "options": ["A. 인공지능이 사회에 미치는 영향", "B. 환경 문제", "C. 의료 기술"],
+        "answer": "A"
+      },
+      {
+        "question": "Had he been more careful, he wouldn't have made such a costly mistake.",
+        "instruction": "화자가 실수를 한 이유를 고르세요.",
+        "options": ["A. 더 신중하지 않아서", "B. 더 빠르게 일하지 않아서", "C. 기회가 없어서"],
+        "answer": "A"
+      },
+      {
+        "question": "The painting, which dates back to the 16th century, is displayed in the museum's main gallery.",
+        "instruction": "그림이 전시된 장소를 고르세요.",
+        "options": ["A. 개인 소장", "B. 박물관 메인 갤러리", "C. 학교"],
+        "answer": "B"
+      },
+      {
+        "question": "The chef, known for his innovative recipes, won an international culinary award last year.",
+        "instruction": "요리사의 특징을 고르세요.",
+        "options": ["A. 창의적인 레시피로 유명하다", "B. 전통 요리를 만든다", "C. 요리 경연에 참여하지 않았다"],
+        "answer": "A"
+      },
+      {
+        "question": "The students were given an assignment to write an essay analyzing the themes of a classic novel.",
+        "instruction": "학생들에게 주어진 과제를 고르세요.",
+        "options": ["A. 소설 주제 분석 에세이 작성", "B. 소설 요약 작성", "C. 소설을 읽고 토론하기"],
+        "answer": "A"
+      },
+      {
+        "question": "The scientist presented her findings, which revealed a groundbreaking discovery about renewable energy.",
+        "instruction": "과학자가 발표한 내용을 고르세요.",
+        "options": ["A. 재생 에너지에 대한 발견", "B. 환경 오염에 대한 연구", "C. 물리학 이론"],
+        "answer": "A"
+      },
+      {
+        "question": "The actor, who had played a leading role in numerous films, received a lifetime achievement award.",
+        "instruction": "배우가 받은 상의 종류를 고르세요.",
+        "options": ["A. 신인상", "B. 평생 공로상", "C. 조연상"],
+        "answer": "B"
+      },
+      {
+        "question": "By the time the firemen arrived, the entire building had already been engulfed in flames.",
+        "instruction": "화재 당시 건물의 상태를 고르세요.",
+        "options": ["A. 불길에 휩싸였다", "B. 안전했다", "C. 불이 약간 났다"],
+        "answer": "A"
+      },
+      {
+        "question": "The documentary explored the effects of climate change on vulnerable ecosystems, such as coral reefs.",
+        "instruction": "다큐멘터리가 다룬 주제를 고르세요.",
+        "options": ["A. 기후 변화가 취약한 생태계에 미치는 영향", "B. 도시화와 경제 성장", "C. 해양 스포츠"],
+        "answer": "A"
+      },
+      {
+        "question": "The young artist, inspired by her travels, created a series of paintings depicting diverse cultures.",
+        "instruction": "예술가가 그림에 표현한 것을 고르세요.",
+        "options": ["A. 다양한 문화", "B. 동물", "C. 풍경"],
+        "answer": "A"
+      },
+      {
+        "question": "The lawyer argued persuasively, presenting evidence that convinced the jury of his client's innocence.",
+        "instruction": "변호사가 한 일을 고르세요.",
+        "options": ["A. 증거를 제시했다", "B. 상대를 설득했다", "C. 판결을 내렸다"],
+        "answer": "A"
+      },
+      {
+        "question": "The engineers developed a system that significantly improved the efficiency of solar panels.",
+        "instruction": "엔지니어들이 개선한 것을 고르세요.",
+        "options": ["A. 태양광 패널 효율", "B. 전력 저장 시스템", "C. 풍력 발전"],
+        "answer": "A"
+      },
+      {
+        "question": "The city council approved a proposal to build a park in the center of the city, aiming to provide more recreational spaces for residents.",
+        "instruction": "시의회가 승인한 계획을 고르세요.",
+        "options": ["A. 공원 건설", "B. 도서관 확장", "C. 도로 재건"],
+        "answer": "A"
+      },
+      {
+        "question": "The speech emphasized the importance of education in reducing poverty and fostering innovation.",
+        "instruction": "연설의 핵심 주제를 고르세요.",
+        "options": ["A. 교육의 중요성", "B. 건강 관리", "C. 경제 성장"],
+        "answer": "A"
+      }
+    ],
+    "8": [
+      {
+        "question": "The CEO announced a groundbreaking initiative, which aims to make the company carbon-neutral by 2050.",
+        "instruction": "회사가 2050년까지 이루려는 목표를 고르세요.",
+        "options": ["A. 탄소 배출 제로", "B. 매출 두 배 증가", "C. 신제품 개발"],
+        "answer": "A"
+      },
+      {
+        "question": "If she had known about the meeting earlier, she would have prepared more thoroughly.",
+        "instruction": "그녀가 준비를 철저히 하지 못한 이유를 고르세요.",
+        "options": ["A. 회의 일정을 몰랐다", "B. 자료가 부족했다", "C. 장소를 몰랐다"],
+        "answer": "A"
+      },
+      {
+        "question": "The report, which was published last week, highlights the importance of renewable energy for future generations.",
+        "instruction": "보고서가 강조한 내용을 고르세요.",
+        "options": ["A. 화석 연료 사용 증가", "B. 재생 에너지의 중요성", "C. 전력 소비 감소"],
+        "answer": "B"
+      },
+      {
+        "question": "Despite the complexity of the problem, the scientist was able to find a practical solution that could be implemented immediately.",
+        "instruction": "과학자가 찾은 해결책의 특징을 고르세요.",
+        "options": ["A. 복잡하고 비현실적이다", "B. 즉시 실행 가능하다", "C. 시간이 오래 걸린다"],
+        "answer": "B"
+      },
+      {
+        "question": "The speech, which was delivered by a Nobel laureate, inspired many young researchers to pursue careers in science.",
+        "instruction": "연설자가 청중에게 영감을 준 이유를 고르세요.",
+        "options": ["A. 노벨상 수상자라서", "B. 경제에 대해 말해서", "C. 과학 연구의 필요성을 강조해서"],
+        "answer": "C"
+      },
+      {
+        "question": "By the time the rescue team arrived, the floodwaters had already reached the rooftops of many houses.",
+        "instruction": "구조팀이 도착했을 때 상황을 고르세요.",
+        "options": ["A. 홍수가 멈췄다", "B. 홍수가 집 지붕에 도달했다", "C. 물이 완전히 빠졌다"],
+        "answer": "B"
+      },
+      {
+        "question": "Had the company invested in renewable energy earlier, it could have saved millions of dollars in operational costs.",
+        "instruction": "회사가 큰 비용을 절약할 수 있었던 조건을 고르세요.",
+        "options": ["A. 재생 에너지에 투자했다면", "B. 인력을 줄였다면", "C. 제품 가격을 올렸다다면"],
+        "answer": "A"
+      },
+      {
+        "question": "The project, which was funded by international organizations, aims to improve access to clean drinking water in rural areas.",
+        "instruction": "프로젝트의 목표를 고르세요.",
+        "options": ["A. 깨끗한 식수 제공", "B. 도시 개발", "C. 농업 기술 개선"],
+        "answer": "A"
+      },
+      {
+        "question": "The patient, who had been suffering from a rare disease, recovered completely after receiving the new treatment.",
+        "instruction": "환자가 회복된 이유를 고르세요.",
+        "options": ["A. 새로운 치료를 받아서", "B. 수술을 받지 않아서", "C. 약을 먹지 않아서"],
+        "answer": "A"
+      },
+      {
+        "question": "The climate summit, attended by leaders from over 100 countries, resulted in a historic agreement to reduce global emissions.",
+        "instruction": "기후 정상회의의 결과를 고르세요.",
+        "options": ["A. 글로벌 배출량 감소에 합의", "B. 새로운 전쟁 협정", "C. 경제 협력 강화"],
+        "answer": "A"
+      },
+      {
+        "question": "The novel explores the moral dilemmas faced by its protagonist, who struggles to choose between personal ambition and loyalty to his family.",
+        "instruction": "소설의 주제를 고르세요.",
+        "options": ["A. 도덕적 딜레마", "B. 과학적 발견", "C. 역사적 사건"],
+        "answer": "A"
+      },
+      {
+        "question": "The archaeological site, which dates back to the Bronze Age, contains artifacts that shed light on ancient civilizations.",
+        "instruction": "고고학적 유적지가 제공하는 정보를 고르세요.",
+        "options": ["A. 현대 문명", "B. 고대 문명", "C. 미래 사회"],
+        "answer": "B"
+      },
+      {
+        "question": "The new law mandates stricter regulations on the disposal of hazardous waste, aiming to protect the environment.",
+        "instruction": "새로운 법의 목적을 고르세요.",
+        "options": ["A. 환경 보호", "B. 산업 성장", "C. 교통 규제"],
+        "answer": "A"
+      },
+      {
+        "question": "The researcher, who has dedicated her entire career to studying infectious diseases, published a groundbreaking paper on vaccine development.",
+        "instruction": "연구자가 발표한 논문의 주제를 고르세요.",
+        "options": ["A. 백신 개발", "B. 환경 오염", "C. 암 치료"],
+        "answer": "A"
+      },
+      {
+        "question": "The city's transportation system, which includes an extensive network of buses and trains, has significantly reduced traffic congestion.",
+        "instruction": "교통 시스템의 효과를 고르세요.",
+        "options": ["A. 교통 체증 감소", "B. 주차 공간 증가", "C. 대중교통 감소"],
+        "answer": "A"
+      },
+      {
+        "question": "The historian presented evidence that challenged widely accepted theories about the origins of ancient civilizations.",
+        "instruction": "역사가가 도전한 내용을 고르세요.",
+        "options": ["A. 고대 문명의 기원에 대한 이론", "B. 기후 변화 이론", "C. 현대 기술"],
+        "answer": "A"
+      },
+      {
+        "question": "The documentary featured interviews with experts, who discussed the potential risks and benefits of artificial intelligence.",
+        "instruction": "다큐멘터리가 다룬 주제를 고르세요.",
+        "options": ["A. 인공지능의 위험과 이점", "B. 전통 농업 기술", "C. 대체 에너지"],
+        "answer": "A"
+      },
+      {
+        "question": "The environmental activist emphasized the urgent need for global cooperation to combat deforestation and protect biodiversity.",
+        "instruction": "환경 운동가가 강조한 것을 고르세요.",
+        "options": ["A. 삼림 벌채와 생물 다양성 보호", "B. 도시 개발 촉진", "C. 기술 혁신"],
+        "answer": "A"
+      },
+      {
+        "question": "The financial report outlined strategies to enhance sustainability and profitability in the long term.",
+        "instruction": "재무 보고서가 제시한 전략을 고르세요.",
+        "options": ["A. 지속 가능성과 수익성 강화", "B. 단기적인 수익 증대", "C. 시장 확장"],
+        "answer": "A"
+      },
+      {
+        "question": "The artist's latest exhibition, which included abstract paintings and digital installations, attracted thousands of visitors.",
+        "instruction": "예술가의 전시회에 포함된 것을 고르세요.",
+        "options": ["A. 추상화와 디지털 설치물", "B. 사진 작품", "C. 조각품"],
+        "answer": "A"
+      }
+    ],
+    "9": [
+      {
+        "question": "The scientist developed a groundbreaking theory, which revolutionized the field of quantum mechanics.",
+        "instruction": "과학자가 개발한 이론이 영향을 미친 분야를 고르세요.",
+        "options": ["A. 생물학", "B. 양자역학", "C. 화학"],
+        "answer": "B"
+      },
+      {
+        "question": "If the company had invested in renewable energy earlier, it would now be leading the industry in sustainability.",
+        "instruction": "회사가 지속 가능성에서 선두를 잡지 못한 이유를 고르세요.",
+        "options": ["A. 재생 에너지에 늦게 투자했다", "B. 기술력이 부족했다", "C. 비용이 너무 높았다"],
+        "answer": "A"
+      },
+      {
+        "question": "The painting, believed to be an authentic piece by a renowned artist, was auctioned for a record-breaking price.",
+        "instruction": "그림의 특징을 고르세요.",
+        "options": ["A. 잘 알려지지 않은 작가의 작품", "B. 유명한 작가의 진품", "C. 복제된 작품"],
+        "answer": "B"
+      },
+      {
+        "question": "The novel examines the social and economic struggles faced by immigrants in a foreign land.",
+        "instruction": "소설의 주제를 고르세요.",
+        "options": ["A. 이민자들의 사회적, 경제적 어려움", "B. 여행의 즐거움", "C. 교육의 중요성"],
+        "answer": "A"
+      },
+      {
+        "question": "Despite the global economic downturn, the company managed to increase its profits through innovative marketing strategies.",
+        "instruction": "회사가 이익을 증가시킨 방법을 고르세요.",
+        "options": ["A. 혁신적인 마케팅 전략", "B. 직원 감축", "C. 비용 절감"],
+        "answer": "A"
+      },
+      {
+        "question": "The museum, which houses artifacts from ancient civilizations, provides visitors with a glimpse into human history.",
+        "instruction": "박물관이 전시하는 것을 고르세요.",
+        "options": ["A. 현대 예술", "B. 고대 문명 유물", "C. 과학 기술"],
+        "answer": "B"
+      },
+      {
+        "question": "The speech delivered by the environmentalist highlighted the urgent need to address deforestation and its impact on global ecosystems.",
+        "instruction": "연설의 주제를 고르세요.",
+        "options": ["A. 삼림 벌채와 생태계 영향", "B. 재생 에너지 개발", "C. 인공지능의 역할"],
+        "answer": "A"
+      },
+      {
+        "question": "Had the explorers taken adequate supplies, they might have completed their expedition successfully.",
+        "instruction": "탐험가들이 성공하지 못한 이유를 고르세요.",
+        "options": ["A. 충분한 물자를 준비하지 않아서", "B. 경로를 잘못 선택해서", "C. 날씨가 좋지 않아서"],
+        "answer": "A"
+      },
+      {
+        "question": "The groundbreaking research, which was funded by an international grant, unveiled a potential cure for a previously incurable disease.",
+        "instruction": "연구의 성과를 고르세요.",
+        "options": ["A. 난치병의 잠재적 치료법 발견", "B. 새로운 기술 개발", "C. 환경 오염 해결"],
+        "answer": "A"
+      },
+      {
+        "question": "The conference, which brought together world leaders, focused on strategies to combat climate change and promote sustainable development.",
+        "instruction": "회의의 초점이 된 주제를 고르세요.",
+        "options": ["A. 기후 변화 대책과 지속 가능한 개발", "B. 기술 혁신", "C. 군사 협력"],
+        "answer": "A"
+      },
+      {
+        "question": "The entrepreneur, who started her business with minimal resources, has now built a global empire.",
+        "instruction": "사업가의 초기 상황을 고르세요.",
+        "options": ["A. 자원이 거의 없었다", "B. 대규모 투자로 시작했다", "C. 가족의 도움을 받았다"],
+        "answer": "A"
+      },
+      {
+        "question": "The research paper, which analyzed the effects of urbanization on biodiversity, received widespread recognition in the academic community.",
+        "instruction": "연구 논문이 분석한 내용을 고르세요.",
+        "options": ["A. 도시화가 생물 다양성에 미치는 영향", "B. 환경 오염과 경제 성장", "C. 기후 변화와 농업"],
+        "answer": "A"
+      },
+      {
+        "question": "The patient, who had been undergoing treatment for years, finally showed significant improvement after participating in a clinical trial.",
+        "instruction": "환자의 상태가 호전된 이유를 고르세요.",
+        "options": ["A. 임상 시험에 참여해서", "B. 새로운 약을 사용하지 않아서", "C. 운동을 열심히 해서"],
+        "answer": "A"
+      },
+      {
+        "question": "The documentary explored the implications of technological advancements on human interaction and relationships.",
+        "instruction": "다큐멘터리가 다룬 주제를 고르세요.",
+        "options": ["A. 기술 발전이 인간 관계에 미치는 영향", "B. 환경 보호와 기술", "C. 경제 성장의 이점"],
+        "answer": "A"
+      },
+      {
+        "question": "The professor emphasized the importance of critical thinking in analyzing complex problems and developing effective solutions.",
+        "instruction": "교수가 강조한 것을 고르세요.",
+        "options": ["A. 비판적 사고의 중요성", "B. 기술적 사고의 중요성", "C. 시간 관리의 중요성"],
+        "answer": "A"
+      },
+      {
+        "question": "The international agreement, which aims to reduce greenhouse gas emissions, has been signed by over 150 countries.",
+        "instruction": "협정의 목표를 고르세요.",
+        "options": ["A. 온실가스 배출 감소", "B. 경제 협력 강화", "C. 무역 장벽 해제"],
+        "answer": "A"
+      },
+      {
+        "question": "The artist's work, inspired by nature, features intricate patterns and vibrant colors.",
+        "instruction": "예술가의 작품에서 영감을 받은 주제를 고르세요.",
+        "options": ["A. 자연", "B. 과학", "C. 도시"],
+        "answer": "A"
+      },
+      {
+        "question": "The report outlines the benefits and challenges of transitioning to a renewable energy-based economy.",
+        "instruction": "보고서가 다룬 주제를 고르세요.",
+        "options": ["A. 재생 에너지 기반 경제 전환", "B. 전통적 에너지 유지", "C. 전력 소비 감소"],
+        "answer": "A"
+      },
+      {
+        "question": "The novel portrays a dystopian society where technology controls every aspect of human life.",
+        "instruction": "소설이 묘사한 사회를 고르세요.",
+        "options": ["A. 이상적인 사회", "B. 기술이 통제하는 디스토피아 사회", "C. 과거 전통 사회"],
+        "answer": "B"
+      },
+      {
+        "question": "The recent policy changes, which include tax incentives for green businesses, aim to encourage sustainable practices.",
+        "instruction": "정책 변화의 목적을 고르세요.",
+        "options": ["A. 지속 가능한 관행 장려", "B. 새로운 사업 모델 개발", "C. 세금 인상"],
+        "answer": "A"
+      }
+    ],
+    "10": [
+      {
+        "question": "The candidate chose his words carefully when he discussed the proposed uses of the open land. He didn't want to alienate voters on either side of the controversial issue.",
+        "instruction": "What does 'alienate' mean?",
+        "options": ["A. make hostile", "B. encourage", "C. soothe"],
+        "answer": "A"
+      },
+      {
+        "question": "Attempting to construct his own backyard patio, Tai purchased one hundred cement blocks. After laying them out in a pattern, however, he discovered the area he had cleared was insufficient. So Tai stacked the cement blocks against the house and cleared more space, placing the blocks down again the following day. But this time he discovered the ground was not level enough, so he again stacked the one hundred blocks against the house. Observing Tai's behavior, his next-door neighbor inquired, 'Tai, do you intend to put your patio away every single night?'",
+        "instruction": "What role does the structure of this piece play?",
+        "options": [
+          "A. The pattern of blocks foreshadows the pattern carried out by Tai.",
+          "B. The repetition in Tai's behavior creates a pattern that enables a joke.",
+          "C. The narrative structure reveals Tai's process in building the patio."
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The scientist’s hypothesis was not immediately accepted; instead, it underwent rigorous scrutiny before gaining widespread support.",
+        "instruction": "What does 'scrutiny' mean in this context?",
+        "options": ["A. careful examination", "B. immediate dismissal", "C. casual observation"],
+        "answer": "A"
+      },
+      {
+        "question": "The team members, despite their disagreements, collaborated effectively to meet the tight deadline.",
+        "instruction": "What does 'collaborated' mean?",
+        "options": ["A. worked together", "B. argued constantly", "C. refused to cooperate"],
+        "answer": "A"
+      },
+      {
+        "question": "The author's argument is bolstered by numerous examples and statistical data that make the case compelling.",
+        "instruction": "What does 'bolstered' mean?",
+        "options": ["A. weakened", "B. supported", "C. ignored"],
+        "answer": "B"
+      },
+      {
+        "question": "The patient expressed ambivalence about undergoing surgery, torn between hope for recovery and fear of the procedure.",
+        "instruction": "What does 'ambivalence' mean?",
+        "options": ["A. clear decision", "B. mixed feelings", "C. strong enthusiasm"],
+        "answer": "B"
+      },
+      {
+        "question": "Despite its dilapidated condition, the old building was considered a historical treasure by the community.",
+        "instruction": "What does 'dilapidated' mean?",
+        "options": ["A. well-maintained", "B. falling apart", "C. newly built"],
+        "answer": "B"
+      },
+      {
+        "question": "The CEO's speech revolved around the juxtaposition of traditional values and modern innovation.",
+        "instruction": "What does 'juxtaposition' mean?",
+        "options": ["A. a combination of opposites", "B. a rejection of tradition", "C. a focus on one idea"],
+        "answer": "A"
+      },
+      {
+        "question": "While the main character seems altruistic, subtle hints suggest underlying selfish motives.",
+        "instruction": "What does 'altruistic' mean?",
+        "options": ["A. selfish", "B. generous", "C. dishonest"],
+        "answer": "B"
+      },
+      {
+        "question": "The committee’s report illuminated the complex relationship between economic growth and environmental sustainability.",
+        "instruction": "What does 'illuminated' mean?",
+        "options": ["A. concealed", "B. explained clearly", "C. complicated further"],
+        "answer": "B"
+      },
+      {
+        "question": "During the debate, the speaker employed rhetorical questions to emphasize his points and engage the audience.",
+        "instruction": "What does 'rhetorical' mean in this context?",
+        "options": ["A. meant to persuade", "B. intended to confuse", "C. requiring an answer"],
+        "answer": "A"
+      },
+      {
+        "question": "The company faced backlash after unveiling a controversial policy that many employees deemed unfair.",
+        "instruction": "What does 'backlash' mean?",
+        "options": ["A. support", "B. strong opposition", "C. indifference"],
+        "answer": "B"
+      },
+      {
+        "question": "The painting evoked a sense of nostalgia, reminding viewers of a simpler time.",
+        "instruction": "What does 'nostalgia' mean?",
+        "options": ["A. a longing for the past", "B. a fear of the future", "C. an appreciation of art"],
+        "answer": "A"
+      },
+      {
+        "question": "The professor elaborated on the topic for nearly an hour, providing detailed explanations and examples.",
+        "instruction": "What does 'elaborated' mean?",
+        "options": ["A. summarized briefly", "B. explained in detail", "C. avoided the topic"],
+        "answer": "B"
+      },
+      {
+        "question": "The philanthropist’s contributions to education were unparalleled, benefiting countless underprivileged students.",
+        "instruction": "What does 'philanthropist' mean?",
+        "options": ["A. a person who donates to charitable causes", "B. a person who opposes charity", "C. a person who manages schools"],
+        "answer": "A"
+      },
+      {
+        "question": "Although the author claims to be impartial, the tone of the article reveals a clear bias.",
+        "instruction": "What does 'impartial' mean?",
+        "options": ["A. biased", "B. neutral", "C. critical"],
+        "answer": "B"
+      },
+      {
+        "question": "The intricate details of the design highlight the artist’s extraordinary craftsmanship.",
+        "instruction": "What does 'intricate' mean?",
+        "options": ["A. simple", "B. complex", "C. unimportant"],
+        "answer": "B"
+      },
+      {
+        "question": "The politician's statement was ambiguous, leaving many voters confused about his true stance.",
+        "instruction": "What does 'ambiguous' mean?",
+        "options": ["A. clear", "B. open to multiple interpretations", "C. repetitive"],
+        "answer": "B"
+      },
+      {
+        "question": "The experiment yielded results that were both surprising and significant to the scientific community.",
+        "instruction": "What does 'yielded' mean?",
+        "options": ["A. produced", "B. hindered", "C. rejected"],
+        "answer": "A"
+      },
+      {
+        "question": "The author’s writing style is characterized by brevity, using concise sentences to convey powerful ideas.",
+        "instruction": "What does 'brevity' mean?",
+        "options": ["A. simplicity", "B. shortness", "C. complexity"],
+        "answer": "B"
+      }
+    ],
+    "11": [
+      {
+        "question": "The philosopher argued that happiness is not merely the absence of pain but the presence of meaning and purpose.",
+        "instruction": "What does the philosopher suggest about happiness?",
+        "options": [
+          "A. Happiness is achieved through pleasure only.",
+          "B. Happiness involves meaning and purpose.",
+          "C. Happiness is the absence of pain."
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "Despite initial skepticism, the theory of relativity has become one of the foundational pillars of modern physics.",
+        "instruction": "What does 'skepticism' mean in this context?",
+        "options": ["A. belief", "B. doubt", "C. support"],
+        "answer": "B"
+      },
+      {
+        "question": "The intricate balance of ecosystems demonstrates how even minor changes can have cascading effects throughout the environment.",
+        "instruction": "What does 'cascading effects' mean?",
+        "options": [
+          "A. Large immediate changes",
+          "B. Chain reactions caused by minor changes",
+          "C. Unrelated random events"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "Her speech was lauded for its eloquence and ability to inspire a diverse audience.",
+        "instruction": "What does 'eloquence' mean?",
+        "options": [
+          "A. The ability to write beautifully",
+          "B. The ability to speak persuasively and movingly",
+          "C. The ability to argue logically"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The groundbreaking experiment revealed an anomaly in the data, prompting further investigation by the scientific community.",
+        "instruction": "What does 'anomaly' mean?",
+        "options": ["A. A typical result", "B. An unusual or unexpected result", "C. A predictable result"],
+        "answer": "B"
+      },
+      {
+        "question": "The protagonist's journey is a metaphor for the universal struggle between good and evil.",
+        "instruction": "What does 'metaphor' mean?",
+        "options": [
+          "A. A direct comparison",
+          "B. A symbolic representation",
+          "C. A literal meaning"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "While the technology has many potential benefits, its implementation has also raised significant ethical concerns.",
+        "instruction": "What does 'ethical concerns' refer to?",
+        "options": [
+          "A. Questions about efficiency",
+          "B. Questions about morality and fairness",
+          "C. Questions about cost and performance"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The historian's interpretation of the events diverges significantly from traditional narratives, offering a fresh perspective.",
+        "instruction": "What does 'diverges' mean in this context?",
+        "options": ["A. Agrees with", "B. Differs from", "C. Simplifies"],
+        "answer": "B"
+      },
+      {
+        "question": "The author uses juxtaposition to contrast the serenity of nature with the chaos of industrialization.",
+        "instruction": "What does 'juxtaposition' mean in this context?",
+        "options": [
+          "A. Placing two ideas side by side for comparison",
+          "B. Explaining one idea in detail",
+          "C. Highlighting similarities"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The experiment failed to yield conclusive results, necessitating additional trials to confirm the hypothesis.",
+        "instruction": "What does 'necessitating' mean?",
+        "options": [
+          "A. Making unnecessary",
+          "B. Requiring",
+          "C. Preventing"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The memoir provides an unflinching account of the author's struggles during the war, offering readers a raw and authentic perspective.",
+        "instruction": "What does 'unflinching' mean?",
+        "options": ["A. Hesitant", "B. Courageous and direct", "C. Biased"],
+        "answer": "B"
+      },
+      {
+        "question": "The diplomat's deft handling of the negotiations prevented a potential international crisis.",
+        "instruction": "What does 'deft' mean?",
+        "options": ["A. Clumsy", "B. Skillful", "C. Delayed"],
+        "answer": "B"
+      },
+      {
+        "question": "The advent of artificial intelligence has sparked debates about its implications for employment and privacy.",
+        "instruction": "What does 'advent' mean?",
+        "options": ["A. Decline", "B. Arrival", "C. Removal"],
+        "answer": "B"
+      },
+      {
+        "question": "The complex plot of the novel was replete with twists and turns, keeping readers engaged until the very end.",
+        "instruction": "What does 'replete' mean?",
+        "options": [
+          "A. Completely filled",
+          "B. Lacking",
+          "C. Simple and straightforward"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The activists condemned the government’s decision, arguing that it was antithetical to the values of democracy.",
+        "instruction": "What does 'antithetical' mean?",
+        "options": ["A. Opposed to", "B. Supportive of", "C. Similar to"],
+        "answer": "A"
+      },
+      {
+        "question": "The architect's design seamlessly blends traditional elements with modern aesthetics.",
+        "instruction": "What does 'seamlessly' mean?",
+        "options": [
+          "A. Without interruption or gaps",
+          "B. With visible errors",
+          "C. Gradually and slowly"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The committee’s decision to allocate resources to renewable energy projects reflects its commitment to sustainability.",
+        "instruction": "What does 'allocate' mean?",
+        "options": ["A. Withhold", "B. Distribute", "C. Criticize"],
+        "answer": "B"
+      },
+      {
+        "question": "The protagonist's downfall was precipitated by his hubris and refusal to heed warnings.",
+        "instruction": "What does 'hubris' mean?",
+        "options": ["A. Modesty", "B. Excessive pride", "C. Wisdom"],
+        "answer": "B"
+      },
+      {
+        "question": "The scientist posited that the increase in temperature was directly correlated with the rise in carbon emissions.",
+        "instruction": "What does 'posited' mean?",
+        "options": [
+          "A. Disproved",
+          "B. Suggested or proposed",
+          "C. Ignored"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The policy, though controversial, was implemented to mitigate the effects of the economic downturn.",
+        "instruction": "What does 'mitigate' mean?",
+        "options": ["A. Worsen", "B. Alleviate", "C. Delay"],
+        "answer": "B"
+      }
+    ],
+    "12": [
+      {
+        "question": "The sociologist's study provided an exhaustive analysis of the correlation between urbanization and mental health issues.",
+        "instruction": "What does 'exhaustive' mean?",
+        "options": [
+          "A. Partial or incomplete",
+          "B. Thorough and comprehensive",
+          "C. Brief and superficial"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The policy's efficacy was questioned due to its inability to address the systemic causes of the issue.",
+        "instruction": "What does 'efficacy' mean?",
+        "options": ["A. Effectiveness", "B. Simplicity", "C. Popularity"],
+        "answer": "A"
+      },
+      {
+        "question": "Despite being presented with irrefutable evidence, the defendant continued to deny any involvement in the crime.",
+        "instruction": "What does 'irrefutable' mean?",
+        "options": ["A. Weak", "B. Impossible to deny", "C. Questionable"],
+        "answer": "B"
+      },
+      {
+        "question": "The author juxtaposes the protagonist’s idealism with the antagonist’s pragmatism to highlight their contrasting worldviews.",
+        "instruction": "What does 'pragmatism' mean?",
+        "options": [
+          "A. An unrealistic perspective",
+          "B. A practical approach",
+          "C. A pessimistic outlook"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The philosophical debate centered on the dichotomy between free will and determinism.",
+        "instruction": "What does 'dichotomy' mean?",
+        "options": [
+          "A. A clear division into two contrasting things",
+          "B. A harmonious combination",
+          "C. A gradual transition"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The committee's decision was predicated on the assumption that economic conditions would improve.",
+        "instruction": "What does 'predicated on' mean?",
+        "options": [
+          "A. Based on",
+          "B. Contrary to",
+          "C. Irrelevant to"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The artist’s work, which oscillates between abstraction and realism, challenges traditional notions of representation.",
+        "instruction": "What does 'oscillates' mean?",
+        "options": [
+          "A. Alternates between two states",
+          "B. Maintains a consistent style",
+          "C. Focuses on one theme"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The climactic scene of the play was replete with dramatic tension and emotional depth.",
+        "instruction": "What does 'replete' mean?",
+        "options": [
+          "A. Completely filled",
+          "B. Lacking in depth",
+          "C. Somewhat engaging"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The historian’s interpretation of the document was criticized for being anachronistic and out of touch with the context of the era.",
+        "instruction": "What does 'anachronistic' mean?",
+        "options": [
+          "A. Chronologically misplaced",
+          "B. Perfectly timed",
+          "C. Technologically advanced"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The scientist posited a novel hypothesis to explain the observed phenomena, which contradicted established theories.",
+        "instruction": "What does 'posited' mean?",
+        "options": [
+          "A. Disproved",
+          "B. Proposed",
+          "C. Ignored"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The novel explores existential themes, delving into questions of identity, purpose, and the human condition.",
+        "instruction": "What does 'existential' mean?",
+        "options": [
+          "A. Relating to existence and meaning",
+          "B. Focused on external appearances",
+          "C. Limited to scientific reasoning"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The scientist’s meticulous approach ensured that every variable was accounted for in the experiment.",
+        "instruction": "What does 'meticulous' mean?",
+        "options": [
+          "A. Careful and precise",
+          "B. Quick and careless",
+          "C. Innovative and bold"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The memoir recounts the harrowing experiences of refugees fleeing from conflict zones.",
+        "instruction": "What does 'harrowing' mean?",
+        "options": ["A. Distressing and traumatic", "B. Inspiring", "C. Unimportant"],
+        "answer": "A"
+      },
+      {
+        "question": "The politician’s equivocal statement left many voters uncertain about his true position on the issue.",
+        "instruction": "What does 'equivocal' mean?",
+        "options": ["A. Clear and direct", "B. Ambiguous", "C. Informative"],
+        "answer": "B"
+      },
+      {
+        "question": "The theory postulates that human behavior is shaped by both genetics and environmental factors.",
+        "instruction": "What does 'postulates' mean?",
+        "options": [
+          "A. Assumes as a basis for argument",
+          "B. Disproves completely",
+          "C. Ignores"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The architecture of the ancient city was an amalgamation of various cultural influences.",
+        "instruction": "What does 'amalgamation' mean?",
+        "options": [
+          "A. A mixture or combination",
+          "B. A separation into parts",
+          "C. A modern adaptation"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The research findings underscore the need for urgent action to address climate change.",
+        "instruction": "What does 'underscore' mean?",
+        "options": [
+          "A. Highlight or emphasize",
+          "B. Dismiss",
+          "C. Question"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The diplomat’s speech was laced with veiled threats, signaling a possible escalation in tensions.",
+        "instruction": "What does 'veiled' mean?",
+        "options": ["A. Direct", "B. Hidden or disguised", "C. Exaggerated"],
+        "answer": "B"
+      },
+      {
+        "question": "The enigmatic nature of the painting has puzzled art critics for decades.",
+        "instruction": "What does 'enigmatic' mean?",
+        "options": ["A. Mysterious", "B. Obvious", "C. Dull"],
+        "answer": "A"
+      },
+      {
+        "question": "The professor’s lecture elucidated the complex principles of quantum mechanics.",
+        "instruction": "What does 'elucidated' mean?",
+        "options": ["A. Explained clearly", "B. Simplified too much", "C. Made more confusing"],
+        "answer": "A"
+      }
+    ],
+    "13": [
+      {
+        "question": "The philosopher contended that human freedom is not absolute but is constrained by societal norms and personal responsibilities.",
+        "instruction": "What does 'contended' mean in this context?",
+        "options": ["A. Disagreed", "B. Argued or claimed", "C. Ignored"],
+        "answer": "B"
+      },
+      {
+        "question": "The novel’s protagonist is emblematic of the struggle between ambition and morality, embodying the tension inherent in human nature.",
+        "instruction": "What does 'emblematic' mean?",
+        "options": ["A. Representative", "B. Opposed to", "C. Contradictory"],
+        "answer": "A"
+      },
+      {
+        "question": "The scientist’s theory was groundbreaking, yet it remained esoteric, understood only by experts in the field.",
+        "instruction": "What does 'esoteric' mean?",
+        "options": ["A. Widely understood", "B. Difficult to understand", "C. Irrelevant"],
+        "answer": "B"
+      },
+      {
+        "question": "The author’s narrative style is characterized by its laconic prose, which conveys complex ideas with remarkable brevity.",
+        "instruction": "What does 'laconic' mean?",
+        "options": ["A. Wordy", "B. Concise", "C. Detailed"],
+        "answer": "B"
+      },
+      {
+        "question": "The environmentalist argued that the commodification of natural resources exacerbates ecological degradation.",
+        "instruction": "What does 'commodification' mean?",
+        "options": [
+          "A. Treating something as a product to be bought and sold",
+          "B. Preserving something in its natural state",
+          "C. Ignoring the value of something"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The juxtaposition of beauty and decay in the painting evokes a profound reflection on the transience of life.",
+        "instruction": "What does 'transience' mean?",
+        "options": ["A. Permanence", "B. Temporariness", "C. Strength"],
+        "answer": "B"
+      },
+      {
+        "question": "The political leader’s rhetoric was replete with populist appeals, masking the lack of concrete policy proposals.",
+        "instruction": "What does 'rhetoric' mean?",
+        "options": [
+          "A. Persuasive speech",
+          "B. Logical arguments",
+          "C. Direct orders"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The historian deconstructed the prevailing narrative, exposing the biases inherent in the traditional account.",
+        "instruction": "What does 'deconstructed' mean?",
+        "options": [
+          "A. Supported",
+          "B. Critically analyzed and dismantled",
+          "C. Simplified"
+        ],
+        "answer": "B"
+      },
+      {
+        "question": "The anthropologist’s research illuminated the interdependence of cultural practices and environmental sustainability.",
+        "instruction": "What does 'interdependence' mean?",
+        "options": [
+          "A. Mutual reliance",
+          "B. Complete independence",
+          "C. Direct opposition"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The film’s exploration of existential themes challenges viewers to confront the absurdity of life and the search for meaning.",
+        "instruction": "What does 'existential' mean?",
+        "options": [
+          "A. Relating to existence and human experience",
+          "B. Focused on material wealth",
+          "C. Limited to practical concerns"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The professor’s discourse on the philosophy of language traversed centuries of thought, from classical to postmodern theories.",
+        "instruction": "What does 'traversed' mean?",
+        "options": ["A. Simplified", "B. Spanned or covered", "C. Contradicted"],
+        "answer": "B"
+      },
+      {
+        "question": "The scientist’s findings elucidate the intricate mechanisms underlying genetic mutations.",
+        "instruction": "What does 'elucidate' mean?",
+        "options": ["A. Clarify", "B. Complicate", "C. Ignore"],
+        "answer": "A"
+      },
+      {
+        "question": "The poet’s work is suffused with a melancholy tone, reflecting themes of loss and impermanence.",
+        "instruction": "What does 'suffused' mean?",
+        "options": ["A. Filled with", "B. Devoid of", "C. Contrasted with"],
+        "answer": "A"
+      },
+      {
+        "question": "The legal document was replete with archaic language, making it difficult for the average reader to comprehend.",
+        "instruction": "What does 'archaic' mean?",
+        "options": ["A. Modern", "B. Old-fashioned", "C. Complex"],
+        "answer": "B"
+      },
+      {
+        "question": "The protagonist’s hubris led to his inevitable downfall, as he refused to heed the warnings of those around him.",
+        "instruction": "What does 'hubris' mean?",
+        "options": ["A. Excessive pride", "B. Humility", "C. Wisdom"],
+        "answer": "A"
+      },
+      {
+        "question": "The treaty sought to ameliorate tensions between the two nations, fostering a sense of cooperation and mutual respect.",
+        "instruction": "What does 'ameliorate' mean?",
+        "options": ["A. Worsen", "B. Improve", "C. Ignore"],
+        "answer": "B"
+      },
+      {
+        "question": "The author employs anaphora in the text, repeating the initial phrase of each sentence to emphasize key themes.",
+        "instruction": "What does 'anaphora' mean?",
+        "options": [
+          "A. The repetition of words at the beginning of sentences",
+          "B. The use of complex metaphors",
+          "C. The introduction of contrasting ideas"
+        ],
+        "answer": "A"
+      },
+      {
+        "question": "The philosopher postulates that true autonomy is achieved through self-mastery and ethical responsibility.",
+        "instruction": "What does 'autonomy' mean?",
+        "options": ["A. Independence", "B. Subordination", "C. Conflict"],
+        "answer": "A"
+      },
+      {
+        "question": "The critique of the artist’s work was incisive, offering sharp insights into both its strengths and weaknesses.",
+        "instruction": "What does 'incisive' mean?",
+        "options": ["A. Deeply analytical", "B. Superficial", "C. Excessively critical"],
+        "answer": "A"
+      },
+      {
+        "question": "The speech was a clarion call for action, urging citizens to address the growing climate crisis with urgency.",
+        "instruction": "What does 'clarion' mean?",
+        "options": ["A. Clear and inspiring", "B. Hesitant and unclear", "C. Subtle and soft"],
+        "answer": "A"
+      }
     ]
   }
 }
+
+
+
+
+
+
+
+
      
+  
   
   
 
