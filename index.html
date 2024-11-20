@@ -253,7 +253,7 @@
             if (level < 2) return 40;
             if (level < 3) return 50;
             if (level < 5) return 90;
-            if (level < 11) return 90;
+            if (level < 11) return 100;
             return 120;
         }
 
@@ -272,11 +272,34 @@
             }
         }
 
-        // 결과 표시
-        function showResults() {
-            localStorage.setItem("finalResults", JSON.stringify({ level: currentLevel, score: correctAnswers }));
-            window.location.href = "results.html";
-        }
+        /
+        // 최종 결과 저장 및 이동
+function showResults() {
+    const successRate = (correctAnswers / totalQuestions) * 100; // 성공률 계산
+
+    // 성공률에 따라 레벨 결정
+    if (successRate >= 90) {
+        currentLevel = 14;
+    } else if (successRate >= 80) {
+        currentLevel = 12;
+    } else if (successRate >= 70) {
+        currentLevel = 10;
+    } else if (successRate >= 50) {
+        currentLevel = 7;
+    } else {
+        currentLevel = 0; // 성공률이 낮을 경우
+    }
+
+    // localStorage에 결과 저장
+    localStorage.setItem("finalResults", JSON.stringify({
+        level: currentLevel,
+        score: correctAnswers
+    }));
+
+    // 결과 페이지로 이동
+    window.location.href = "results.html";
+}
+
 
         // 초기화
         document.addEventListener("DOMContentLoaded", () => {
