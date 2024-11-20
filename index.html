@@ -159,8 +159,8 @@
 
         // 레벨별 문제 수
         function getProblemCountForLevel(level) {
-            if (level < 10) return 10;
-            if (level < 13) return 5;
+            if (level < 10) return 3;
+            if (level < 13) return 2;
             return 3;
         }
 
@@ -249,10 +249,10 @@
 
         // 시간 제한 가져오기
         function getTimeLimitForLevel(level) {
-            if (level < 1) return 10;
-            if (level < 2) return 15;
-            if (level < 3) return 20;
-            if (level < 5) return 30;
+            if (level < 1) return 20;
+            if (level < 2) return 40;
+            if (level < 3) return 50;
+            if (level < 5) return 90;
             if (level < 11) return 90;
             return 120;
         }
