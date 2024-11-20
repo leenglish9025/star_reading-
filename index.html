@@ -272,11 +272,73 @@
             }
         }
 
-        // 결과 표시
-        function showResults() {
-            localStorage.setItem("finalResults", JSON.stringify({ level: currentLevel, score: correctAnswers }));
-            window.location.href = "results.html";
+       // 성적 데이터를 localStorage에서 가져오기
+const results = JSON.parse(localStorage.getItem("finalResults"));
+
+if (results) {
+    const { level, score } = results;
+
+    // 레벨 표시 및 프로그레스 바 업데이트
+    document.getElementById("final-level").innerText = level;
+    document.getElementById("progress-fill").style.width = `${(level / 14) * 100}%`;
+
+    // 성적 데이터 (예시 데이터)
+    const scoreData = [
+        { area: "문법", correct: 8, score: 80, percentage: "80%" },
+        { area: "독해", correct: 7, score: 70, percentage: "70%" },
+        { area: "어휘", correct: 9, score: 90, percentage: "90%" }
+    ];
+
+    // 영역별 성적 테이블 생성
+    const scoreTable = document.getElementById("score-table");
+    scoreData.forEach(row => {
+        const tr = document.createElement("tr");
+        tr.innerHTML = `
+            <td>${row.area}</td>
+            <td>${row.correct}</td>
+            <td>${row.score}</td>
+            <td>${row.percentage}</td>
+        `;
+        scoreTable.appendChild(tr);
+    });
+
+    // 레이더 차트 생성
+    const ctx = document.getElementById("radar-chart").getContext("2d");
+    new Chart(ctx, {
+        type: 'radar',
+        data: {
+            labels: scoreData.map(row => row.area),
+            datasets: [{
+                label: '성취도',
+                data: scoreData.map(row => row.score),
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 2
+            }]
+        },
+        options: {
+            scales: {
+                r: {
+                    beginAtZero: true,
+                    max: 100
+                }
+            }
         }
+    });
+
+    // 피드백 생성
+    const feedback = document.getElementById("feedback");
+    feedback.innerText = level >= 10
+        ? "훌륭합니다! 고급 수준에 도달했습니다."
+        : "계속 노력하세요! 더 높은 레벨을 목표로 도전해보세요.";
+}
+
+// PDF 다운로드
+document.getElementById("pdf-download").addEventListener("click", () => {
+    const element = document.body;
+    html2pdf().from(element).save("성적표.pdf");
+});
+
 
         // 초기화
         document.addEventListener("DOMContentLoaded", () => {
