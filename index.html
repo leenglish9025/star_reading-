@@ -268,9 +268,14 @@
                 correctAnswers = 0;
                 loadProblems();
             } else {
-                showResults();
+           // 결과 표시
+        function showResults() {
+            localStorage.setItem("finalResults", JSON.stringify({ level: currentLevel, score: correctAnswers }));
+            window.location.href = "results.html";
+        }     showResults();
             }
         }
+        
 
        // 성적 데이터를 localStorage에서 가져오기
 const results = JSON.parse(localStorage.getItem("finalResults"));
