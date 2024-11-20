@@ -272,7 +272,11 @@
             }
         }
 
-        /
+        // 결과 표시
+        function showResults() {
+            localStorage.setItem("finalResults", JSON.stringify({ level: currentLevel, score: correctAnswers }));
+            window.location.href = "results.html";
+        }
         // 최종 결과 저장 및 이동
 function showResults() {
     const successRate = (correctAnswers / totalQuestions) * 100; // 성공률 계산
