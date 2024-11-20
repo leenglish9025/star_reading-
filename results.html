@@ -4,90 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>성적표</title>
-    <!-- 위에서 작성한 CSS 및 HTML 구조 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>최종 성적표</h1>
+    <header>
+        <h1>최종 성적표</h1>
+    </header>
 
-    <div id="progress-bar">
-        <div id="progress-fill"></div>
-    </div>
-    <p style="text-align: center; font-size: 16px;">총 14레벨 중 당신의 레벨: <span id="final-level">0</span></p>
+    <main>
+        <!-- 레벨 및 프로그레스 바 -->
+        <div id="progress-container">
+            <div id="progress-bar">
+                <div id="progress-fill"></div>
+            </div>
+            <p style="text-align: center; font-size: 16px;">총 14레벨 중 당신의 레벨: <span id="final-level">0</span></p>
+        </div>
 
-    <h2>영역별 성취도</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>영역</th>
-                <th>맞은 개수</th>
-                <th>점수</th>
-                <th>성취도</th>
-            </tr>
-        </thead>
-        <tbody id="score-table"></tbody>
-    </table>
+        <!-- 영역별 성적 테이블 -->
+        <h2>영역별 성취도</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>영역</th>
+                    <th>맞은 개수</th>
+                    <th>점수</th>
+                    <th>성취도</th>
+                </tr>
+            </thead>
+            <tbody id="score-table"></tbody>
+        </table>
 
-    <canvas id="radar-chart" class="chart"></canvas>
+        <!-- 레이더 차트 -->
+        <canvas id="radar-chart" class="chart"></canvas>
 
-    <div class="description" id="feedback"></div>
+        <!-- 피드백 -->
+        <div class="description" id="feedback"></div>
 
-    <div id="download-button">
-        <a id="pdf-download" href="#">PDF로 다운로드</a>
-    </div>
+        <!-- PDF 다운로드 버튼 -->
+        <div id="download-button">
+            <a id="pdf-download" href="#">PDF로 다운로드</a>
+        </div>
+    </main>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
-    <script>
-        // 성적 데이터를 localStorage에서 가져오기
-        const results = JSON.parse(localStorage.getItem("results"));
-
-        const finalLevel = results.finalLevel;
-        const scoreData = results.scoreData;
-
-        document.getElementById("final-level").innerText = finalLevel;
-
-        const progressFill = document.getElementById("progress-fill");
-        progressFill.style.width = `${(finalLevel / 14) * 100}%`;
-
-        const scoreTable = document.getElementById("score-table");
-        scoreData.forEach(row => {
-            const tr = document.createElement("tr");
-            tr.innerHTML = `
-                <td>${row.area}</td>
-                <td>${row.correct}</td>
-                <td>${row.score}</td>
-                <td>${row.percentage}</td>
-            `;
-            scoreTable.appendChild(tr);
-        });
-
-        const ctx = document.getElementById("radar-chart").getContext("2d");
-        new Chart(ctx, {
-            type: 'radar',
-            data: {
-                labels: scoreData.map(row => row.area),
-                datasets: [{
-                    label: '성취도',
-                    data: scoreData.map(row => row.score),
-                    backgroundColor: 'rgba(255, 99, 132, 0.2)',
-                    borderColor: 'rgba(255, 99, 132, 1)',
-                    borderWidth: 2
-                }]
-            },
-            options: {
-                scales: {
-                    r: {
-                        beginAtZero: true,
-                        max: 100
-                    }
-                }
-            }
-        });
-
-        document.getElementById("pdf-download").addEventListener("click", () => {
-            const element = document.body;
-            html2pdf().from(element).save("성적표.pdf");
-        });
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
+
