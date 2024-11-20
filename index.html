@@ -248,14 +248,18 @@
         }
 
         // 시간 제한 가져오기
-        function getTimeLimitForLevel(level) {
-            if (level < 1) return 20;
-            if (level < 2) return 40;
-            if (level < 3) return 50;
-            if (level < 5) return 90;
-            if (level < 11) return 100;
-            return 120;
-        }
+function getTimeLimitForLevel(level) {
+    if (level >= 0 && level <= 3) {
+        return 20; // 0~3 레벨: 20초
+    } else if (level >= 4 && level <= 8) {
+        return 50; // 4~8 레벨: 50초
+    } else if (level >= 9 && level <= 13) {
+        return 90; // 9~13 레벨: 1분 30초 (90초)
+    } else {
+        return 120; // 기본값 (14 레벨 이상)
+    }
+}
+
 
         // 레벨 진행 확인
         function checkLevelProgress() {
